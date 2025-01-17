@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = prompt("이름을 입력하세요", "입력란")
+        document.write("당신의 이름은 : ", name, "<br>")
+
+        const korean = prompt("국어점수를 입력하세요", "0")
+        document.write("국어점수는 : ", korean, "<br>")
+
+        const math = prompt("수학점수를 입력하세요", "0")
+        document.write("수학점수는 : ", math, "<br>")
+        
+        const english = prompt("영어점수를 입력하세요", "0")
+        document.write("영어점수는 : ", english, "<br>")
+        
+        sum = korean*1 + math*1 + english*1
+
+        avg = sum/3
+
+        document.write("당신 점수의 평균은 : ", avg, "<br>")
+
+        final = avg >= 60 ? document.write("합격") : document.write("불합격")
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSP</title>
+</head>
+
+<style>
+    .img1
+    {
+        width : 200px;
+        height : 200px;
+    }
+
+    img
+    {
+        width : 10px;
+        height : 10px;
+    }
+</style>
+
+<body>
+    <button type="button" onclick="game(1)"><img src="1.png" class="img1"></button>
+    <button type="button" onclick="game(2)"><img src="2.png" class="img1"></button>
+    <button type="button" onclick="game(3)"><img src="3.png" class="img1"></button>
+    
+    <script>
+        com = Math.floor((Math.random() * 3)) + 1
+        console.log(com)
+
+        function game(num)
+        {
+            if(num == 1)
+            {
+                document.write("사람 : 가위<br>")
+                if(com == 1) 
+                {
+                    document.write("컴퓨터 : 가위<br>")
+                    document.write("비겼습니다.")
+                }
+                else if(com ==2)
+                {
+                    document.write("컴퓨터 : 바위<br>")
+                    document.write("졌습니다.<br>")
+                    document.write("<img src='aaa.png' height = 100 width = 100> ")
+                }
+                else
+                {
+                    document.write("컴퓨터 : 보<br>")
+                    document.write("이겼습니다.<br>")
+                    document.write("<img src='bbb.png' height = 100 width = 100>")
+                }
+
+            }
+            else if(num ==2)
+            {
+                document.write("사람 : 바위<br>")
+                if(com == 1) 
+                {
+                    document.write("컴퓨터 : 가위<br>")
+                    document.write("이겼습니다.<br>")
+                    document.write("<img src='bbb.png' height = 100 width = 100>")
+                }
+                else if(com ==2)
+                {
+                    document.write("컴퓨터 : 바위<br>")
+                    document.write("비겼습니다.")
+                }
+                else
+                {
+                    document.write("컴퓨터 : 보<br>")
+                    document.write("졌습니다.<br>")
+                    document.write("<img src='aaa.png' height = 100 width = 100>")
+                }
+            }
+            else
+            {
+                document.write("사람 : 보<br>")
+                if(com == 1) 
+                {
+                    document.write("컴퓨터 : 가위<br>")
+                    document.write("졌습니다.<br>")
+                    document.write("<img src='aaa.png' height = 100 width = 100>")
+
+                }
+                else if(com ==2)
+                {
+                    document.write("컴퓨터 : 바위<br>")
+                    document.write("이겼습니다.<br>")
+                    document.write("<img src='bbb.png' height = 100 width = 100>")
+                }
+                else
+                {
+                    document.write("컴퓨터 : 보<br>")
+                    document.write("비겼습니다.")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
