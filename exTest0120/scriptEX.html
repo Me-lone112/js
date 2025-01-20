@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        text = "Hello Thank you good luck to you"
+        document.write(text, "<br><br>")
+        document.write("charAt(문자 불러오기) : " + text.charAt(6), "<br><br>")
+        document.write("slice(문자 잘라내기) : " + text.slice(6, 11), "<br><br>")
+        document.write("indexOf(글자위치반환) : " + text.indexOf("you"), "<br><br>")
+        document.write("indexOf(글자위치반환, 시작위치) : " + text.indexOf("you", 13), "<br><br>")
+        document.write("indexOf(글자위치반환, 시작위치) : " + text.indexOf("you", text.indexOf("you")+1), "<br><br>")
+        document.write("indexOf(글자위치반환) : " +  text.indexOf("x"), "<br><br>") // 1의 보수 -1 (전부 1)
+        document.write("match(찾아서 출력) : " + text.match("you"), "<br><br>") // 찾아서 있을때
+        document.write("match(찾아서 출력) : " + text.match("가"), "<br><br>") // 찾아서 없을때
+        document.write("replace(All)(치환) : " + text.replaceAll("you", "me") + "<br><br>") // 찾아 바꾸기
+        
+        str = text.split(" ")
+        document.write("split후 [0] : " + str[0], "<br><br>")
+        document.write("split후 [4] : " + str[4], "<br><br>")
+    </script>
+</body>
+</html>

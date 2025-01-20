@@ -5,11 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlusCalculator</title>
 </head>
+
+<style>
+    .ip1
+    {
+        width: 150px;
+        height: 70px;
+        font-size: 50px;
+        color: white;
+        background-color: black;
+        text-align: right;
+        border-radius: 30%;
+        border-width: 5px;
+        border-color: chartreuse;
+    }
+
+    button
+    {
+        width: 150px;
+        height: 35px;
+        border-width: 5px;
+
+    }
+</style>
+
+<script>
+    function run()
+    {
+        a = num1.value
+        b = num2.value
+        sum = Number(a) + Number(b)
+        
+        if(a === "" || b === "")
+        {
+            answer.value = "숫자를 입력하세요"
+        }
+        else
+        {
+            answer.value = sum
+        }
+        
+    }
+
+    function reset()
+    {
+        num1.value = ""
+        num2.value = ""
+        answer.value = ""
+    }
+</script>
+
+
 <body>
-    <input type = "text" id="num1">
-    <input type = "text" id="num2">
+    <input type = "text" id="num1" class="ip1">
+    <input type = "text" id="num2" class="ip1">
     <br>
-    <button type="button" onclick="">계산</button>
+    <button type="button" onclick="run()">계산</button>
+    <button type="button" onclick="reset()">리셋</button>
+    <br>
+    <input type="text" id="answer">
+    
+    
 
 </body>
 </html>
