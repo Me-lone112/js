@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk</title>
+</head>
+
+
+
+
+<style>
+    .menuimg{
+        width: 120px;
+        height: 200px;
+    }
+</style>
+
+<body>
+    <table border=1 >
+        <tr>
+            <td colspan="4"><h1>스타벅스 메뉴판</h1></td>
+        </tr>
+        <tr align="center">
+            <td><img src="1.png" class="menuimg" id="aaimg"></td>
+            <td rowspan="4" width="130px" align="left">
+                <input type="checkbox" id="aa_shot" onclick="aa_updatePrice('aa_shot')">샷추가<br>
+                <input type="checkbox" id="aa_syrup" onclick="aa_updatePrice('aa_syrup')">시럽<br>
+                <input type="checkbox" id="aa_milk" onclick="aa_updatePrice('aa_milk')">우유<br>
+                <input type="checkbox" id="aa_whipped" onclick="aa_updatePrice('aa_whipped')">휘핑크림<br>
+                <input type="checkbox" id="aa_drizzle" onclick="aa_updatePrice('aa_drizzle')">드리즐<br>
+            </td>
+            <td><img src="2.png" class="menuimg" id="ltimg"></td>
+            <td rowspan="4" width="130px" align="left">
+                <input type="checkbox" id="lt_shot" onclick="lt_updatePrice('lt_shot')">샷추가<br>
+                <input type="checkbox" id="lt_syrup" onclick="lt_updatePrice('lt_syrup')">시럽<br>
+                <input type="checkbox" id="lt_milk" onclick="lt_updatePrice('lt_milk')">우유<br>
+                <input type="checkbox" id="lt_whipped" onclick="lt_updatePrice('lt_whipped')">휘핑크림<br>
+                <input type="checkbox" id="lt_drizzle" onclick="lt_updatePrice('lt_drizzle')">드리즐<br>
+            </td>
+        </tr>
+        <tr align="center">
+            <td><input type="text" value="아메리카노(ICE)" id="aamenu"></td>
+            <td><input type="text" value="카페라떼(ICE)" id="ltmenu"></td>
+        </tr>
+        <tr align="center">
+            <td><input type="radio" name = "aa_type" checked="checked" value="ice" onclick="aaswImg('ice')">ICE
+                <input type="radio" name = "aa_type" value="hot" onclick="aaswImg('hot')">HOT</td>
+                <td><input type="radio" name = "lt_type" checked="checked" value="ice" onclick="ltswImg('ice')">ICE
+                    <input type="radio" name = "lt_type" value="hot" onclick="ltswImg('hot')">HOT</td>
+        </tr>
+        <tr align="center">
+            <td>가격<input type="text" value="5300" id="aacash"></td>
+            <td>가격<input type="text" value="5500" id="ltcash"></td>
+        </tr>
+    </table>
+
+
+
+
+
+    <script>
+        function aa_updatePrice(aa_chk){
+            chk = aa_chk
+            baseCash = Number(document.getElementById("aacash").value)
+            addPrice = 0
+            if(chk == 'aa_shot'){
+                if(document.getElementById("aa_shot").checked) addPrice += 500
+                else if(!document.getElementById("aa_shot").checked) addPrice -= 500
+            }
+            else if(chk == 'aa_syrup'){
+                if(document.getElementById("aa_syrup").checked) addPrice += 700
+                else if(!document.getElementById("aa_syrup").checked) addPrice -= 700
+            }
+            else if(chk == 'aa_milk'){
+                if(document.getElementById("aa_milk").checked) addPrice += 300
+                else if(!document.getElementById("aa_milk").checked) addPrice -= 300
+            }
+            else if(chk == 'aa_whipped'){
+                if(document.getElementById("aa_whipped").checked) addPrice += 500
+                else if(!document.getElementById("aa_whipped").checked) addPrice -= 500
+            }
+            else if(chk == 'aa_drizzle'){
+                if(document.getElementById("aa_drizzle").checked) addPrice += 1000
+                else if(!document.getElementById("aa_drizzle").checked) addPrice -= 1000
+            }
+            
+            document.getElementById("aacash").value = baseCash + addPrice
+        }
+        function lt_updatePrice(lt_chk){
+            chk = lt_chk
+            baseCash = Number(document.getElementById("ltcash").value)
+            addPrice = 0
+            if(chk == 'lt_shot'){
+                if(document.getElementById("lt_shot").checked) addPrice += 500
+                else if(!document.getElementById("lt_shot").checked) addPrice -= 500
+            }
+            else if(chk == 'lt_syrup'){
+                if(document.getElementById("lt_syrup").checked) addPrice += 700
+                else if(!document.getElementById("lt_syrup").checked) addPrice -= 700
+            }
+            else if(chk == 'lt_milk'){
+                if(document.getElementById("lt_milk").checked) addPrice += 300
+                else if(!document.getElementById("lt_milk").checked) addPrice -= 300
+            }
+            else if(chk == 'lt_whipped'){
+                if(document.getElementById("lt_whipped").checked) addPrice += 500
+                else if(!document.getElementById("lt_whipped").checked) addPrice -= 500
+            }
+            else if(chk == 'lt_drizzle'){
+                if(document.getElementById("lt_drizzle").checked) addPrice += 1000
+                else if(!document.getElementById("lt_drizzle").checked) addPrice -= 1000
+            }
+            
+            document.getElementById("ltcash").value = baseCash + addPrice
+        }
+        function aaswImg(aa_Type){
+            var Type = aa_Type
+            money = Number(document.getElementById("aacash").value)
+            if(Type=="ice"){
+                document.getElementById("aaimg").src="aaice.png"
+                document.getElementById("aamenu").value="아메리카노(ICE)"
+                document.getElementById("aacash").value= money+=500
+            }
+            else if(Type =="hot"){
+                document.getElementById("aaimg").src="aahot.png"
+                document.getElementById("aamenu").value="아메리카노(HOT)"
+                document.getElementById("aacash").value= money-=500
+            }
+        }
+        function ltswImg(aa_Type){
+            var Type = aa_Type
+            if(Type=="ice"){
+                document.getElementById("ltimg").src="ltice.png"
+                document.getElementById("ltmenu").value="카페라떼(ICE)"
+                document.getElementById("ltcash").value="5500"
+            }
+            else if(Type =="hot"){
+                document.getElementById("ltimg").src="lthot.png"
+                document.getElementById("ltmenu").value="카페라떼(HOT)"
+                document.getElementById("ltcash").value="5000"
+            }
+        }
+    </script>
+</body>
+
+</html>

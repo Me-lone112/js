@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        handle(value)
+        {
+            input.value=input.value + handle.value;
+        }
+        back()
+        {
+
+        }
+        run()
+        {
+
+        }
+    </script>
+
+    <style>
+
+    </style>
+    <table>
+        <tr>
+            <td colspan="4"><input type="text" id = "input2"></td>
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="input"></td>
+        </tr>
+        <tr>
+            <td><button onclick="handle('+')" class = "btn_1">+</button></td>
+            <td><button onclick="handle('-')" class = "btn_1">-</button></td>
+            <td><button onclick="handle('*')" class = "btn_1">*</button></td>
+            <td><button onclick="handle('/')" class = "btn_1">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="handle('7')" class="btn_1">7</button></td>
+            <td><button onclick="handle('8')" class="btn_1">8</button></td>
+            <td><button onclick="handle('9')" class="btn_1">9</button></td>
+            <td><button onclick="back()" class="btn_1"><-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="handle('4')" class="btn_1">4</button></td>
+            <td><button onclick="handle('5')" class="btn_1">5</button></td>
+            <td><button onclick="handle('6')" class="btn_1">6</button></td>
+            <td rowspan="2"><button onclick="run()">=</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="handle('3')" class="btn_1">3</button></td>
+            <td><button onclick="handle('2')" class="btn_1">2</button></td>
+            <td><button onclick="handle('1')" class="btn_1">1</button></td>
+            
+        </tr>
+    </table>
+
+
+
+</body>
+</html>

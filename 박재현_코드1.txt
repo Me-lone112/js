@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk</title>
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" href="kioskEx.css" />
+    
+</head>
+<body class="slide-in"> 
+    <div class="menu_Board">
+        <table border = "1" class="menu_Table">
+            <tr>
+                <td colspan="5" align="center"><h1>StarBucks Menu</h1></td>
+            </tr>
+            <tr>
+                <td rowspan="8" id="menu_Selector">
+                    <button type="button" class = "menu_Button" onclick="espresso_button()">에스프레소</button>
+                    <button type="button" class = "menu_Button" onclick="decafeine_button()">디카페인</button>
+                    <button type="button" class = "menu_Button" onclick="latte_button()">라떼</button>
+                    <button type="button" class = "menu_Button" onclick="tea_button()">티</button>
+                    <button type="button" class = "menu_Button" onclick="smoothie_button()">스무디</button>
+                    <button type="button" class = "menu_Button" onclick="frappe_button()">프라페</button>
+                    <button type="button" class = "menu_Button" onclick="beverage_button()">음료</button>
+                    <button type="button" class = "menu_Button" onclick="food_button()">푸드</button>
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2" rowspan="2">
+                    <img src="starBucksLogo.png" class="menu_img" id="main_menu_img">
+                </td>
+                <td colspan="2" align="left">
+                    <input type="checkbox" id="shot_Plus" onclick="update_Price('shot')" disabled>샷추가<br>
+                    <input type="checkbox" id="syrup_Plus" onclick="update_Price('syrup')" disabled>시럽<br>
+                    <input type="checkbox" id="milk_Plus" onclick="update_Price('milk')" disabled>우유<br>
+                    <input type="checkbox" id="whipped_Plus" onclick="update_Price('whipped')" disabled>휘핑크림<br>
+                    <input type="checkbox" id="drizzle_Plus" onclick="update_Price('drizzle')" disabled>드리즐<br>
+                </td>
+
+    
+            </tr>
+            <tr>
+                <td colspan="2"><input type="radio" name = "aa_type" checked="checked" value="ice" onclick="switch_Img('ice')" id="ice_radio" disabled>ICE
+                    <input type="radio" name = "aa_type" value="hot" onclick="switch_Img('hot')" id="hot_radio" disabled>HOT
+                </td>
+            </tr>
+            <tr align="center">
+
+            </tr>
+            <tr align="center">
+                <td>
+                    가격<input type="text" value = 0 id="aacash">
+                    
+                </td>
+                <td>
+                    수량<input type="text" value="1" id="amount_Text">
+                </td>
+
+                <td>
+                    <button class="pm_Button" onclick="plus_Button()">+</button>
+                </td>
+
+                <td>
+                    <button class="pm_Button" onclick="minus_Button()">-</button>
+                </td>
+                
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    총액<input type="text" id="total_Price" value = 0>
+                    
+                </td>
+                <td>
+                    <button id="select_Button" onclick="enter()">입력</button>
+                </td>
+                <td>
+                    <button id="reset_Button" onclick="reset()">리셋</button>
+                </td>
+    
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">
+                    입력내역
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    made By
+                    <br>PJH
+                </td>
+                <td>
+                    <button class="move_Button" onclick="location.href='frontPage.html'">초기화면으로 이동
+                </td>
+                
+            </tr>
+        </table>
+    </div>
+
+    
+    
+    
+    <script>
+        let shot_Count = 0
+        let syrup_Count = 0
+        let milk_Count = 0
+        let whipped_Count = 0
+        let drizzle_Count = 0
+
+        function espresso_button()
+        {
+            document.getElementById('main_menu_img').src = 'espresso.png';
+            document.getElementById('aacash').value = 5300
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5300
+            document.getElementById('ice_radio').checked = true;
+            
+
+
+            document.getElementById('ice_radio').disabled = false;
+            document.getElementById('hot_radio').disabled = false;
+            document.getElementById('shot_Plus').disabled = false;
+            document.getElementById('syrup_Plus').disabled = false;
+            document.getElementById('milk_Plus').disabled = false;
+            document.getElementById('whipped_Plus').disabled = false;
+            document.getElementById('drizzle_Plus').disabled = false;
+            
+            
+        }
+        function decafeine_button()
+        {
+            document.getElementById('main_menu_img').src = 'espresso_decaf.png';
+            document.getElementById('aacash').value = 5800
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5800
+            document.getElementById('ice_radio').checked = true;
+            
+            document.getElementById('ice_radio').disabled = false;
+            document.getElementById('hot_radio').disabled = false;
+            document.getElementById('shot_Plus').disabled = false;
+            document.getElementById('syrup_Plus').disabled = false;
+            document.getElementById('milk_Plus').disabled = false;
+            document.getElementById('whipped_Plus').disabled = false;
+            document.getElementById('drizzle_Plus').disabled = false;
+        }
+        function latte_button()
+        {
+            document.getElementById('main_menu_img').src = 'latte.png';
+            document.getElementById('aacash').value = 6000
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*6000
+            document.getElementById('ice_radio').checked = true;
+            
+            document.getElementById('ice_radio').disabled = false;
+            document.getElementById('hot_radio').disabled = false;
+            document.getElementById('shot_Plus').disabled = false;
+            document.getElementById('syrup_Plus').disabled = false;
+            document.getElementById('milk_Plus').disabled = false;
+            document.getElementById('whipped_Plus').disabled = false;
+            document.getElementById('drizzle_Plus').disabled = false;
+        }
+        function tea_button()
+        {
+            document.getElementById('main_menu_img').src = 'tea.png';
+            document.getElementById('aacash').value = 5500
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5500
+            document.getElementById('ice_radio').disabled = false;
+            document.getElementById('hot_radio').disabled = false;
+            document.getElementById('ice_radio').checked = true;
+            
+            document.getElementById('shot_Plus').disabled = false;
+            document.getElementById('syrup_Plus').disabled = false;
+            document.getElementById('milk_Plus').disabled = false;
+            document.getElementById('whipped_Plus').disabled = false;
+            document.getElementById('drizzle_Plus').disabled = false;
+        }
+        function smoothie_button()
+        {
+            document.getElementById('main_menu_img').src = 'smoothie.png';
+            document.getElementById('aacash').value = 6000
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*6000
+            document.getElementById('ice_radio').disabled = true;
+            document.getElementById('hot_radio').disabled = true;
+            document.getElementById('ice_radio').checked = true;
+            
+            document.getElementById('shot_Plus').disabled = true;
+            document.getElementById('syrup_Plus').disabled = true;
+            document.getElementById('milk_Plus').disabled = true;
+            document.getElementById('whipped_Plus').disabled = true;
+            document.getElementById('drizzle_Plus').disabled = true;
+        }
+        function frappe_button()
+        {
+            document.getElementById('main_menu_img').src = 'frappe.png';
+            document.getElementById('aacash').value = 6200;
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*6200;
+            document.getElementById('ice_radio').disabled = true;
+            document.getElementById('hot_radio').disabled = true;
+            document.getElementById('shot_Plus').disabled = true;
+            document.getElementById('syrup_Plus').disabled = true;
+            document.getElementById('milk_Plus').disabled = true;
+            document.getElementById('whipped_Plus').disabled = true;
+            document.getElementById('drizzle_Plus').disabled = true;
+        }
+        function beverage_button()
+        {
+            document.getElementById('main_menu_img').src = 'beverage.png';
+            document.getElementById('aacash').value = 7000;
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*7000;
+            document.getElementById('ice_radio').disabled = true;
+            document.getElementById('hot_radio').disabled = true;
+            document.getElementById('shot_Plus').disabled = true;
+            document.getElementById('syrup_Plus').disabled = true;
+            document.getElementById('milk_Plus').disabled = true;
+            document.getElementById('whipped_Plus').disabled = true;
+            document.getElementById('drizzle_Plus').disabled = true;
+        }
+        function food_button()
+        {
+            document.getElementById('main_menu_img').src = 'food.png';
+            document.getElementById('aacash').value = 10000;
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*10000;
+            document.getElementById('ice_radio').disabled = true;
+            document.getElementById('hot_radio').disabled = true;
+            document.getElementById('shot_Plus').disabled = true;
+            document.getElementById('syrup_Plus').disabled = true;
+            document.getElementById('milk_Plus').disabled = true;
+            document.getElementById('whipped_Plus').disabled = true;
+            document.getElementById('drizzle_Plus').disabled = true;
+        }
+
+        function reset()
+        {
+            document.getElementById('main_menu_img').src = 'starBucksLogo.png';
+            document.getElementById('total_Price').value= 0;
+            document.getElementById('aacash').value = 0;
+            document.getElementById('amount_Text').value = 1;
+            document.getElementById('ice_radio').disabled = true;
+            document.getElementById('hot_radio').disabled = true;
+            document.getElementById('shot_Plus').disabled = true;
+            document.getElementById('syrup_Plus').disabled = true;
+            document.getElementById('milk_Plus').disabled = true;
+            document.getElementById('whipped_Plus').disabled = true;
+            document.getElementById('drizzle_Plus').disabled = true;
+            document.getElementById('shot_Plus').checked = false;
+            document.getElementById('syrup_Plus').checked = false;
+            document.getElementById('milk_Plus').checked = false;
+            document.getElementById('whipped_Plus').checked = false;
+            document.getElementById('drizzle_Plus').checked = false;
+            shot_Count = 0
+            syrup_Count = 0
+            milk_Count = 0
+            whipped_Count = 0
+            drizzle_Count = 0
+        }
+
+        function plus_Button()
+        {
+            document.getElementById('amount_Text').value = Number(document.getElementById('amount_Text').value) + 1
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*Number(document.getElementById('aacash').value)
+        }
+
+        function minus_Button()
+        {
+            if(document.getElementById('amount_Text').value > 1) 
+            {
+                document.getElementById('amount_Text').value = Number(document.getElementById('amount_Text').value) - 1
+            }
+
+            document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*Number(document.getElementById('aacash').value)
+            
+        }
+
+
+        function update_Price(value)
+        {
+
+
+            if(value == 'shot' && shot_Count == 0)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) + (500 *Number(document.getElementById('amount_Text').value))
+                shot_Count = 1
+            }
+            else if(value == 'shot' && shot_Count == 1)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) - (500 *Number(document.getElementById('amount_Text').value))
+                shot_Count = 0
+            }
+
+            if(value == 'syrup' && syrup_Count == 0)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) + (500 *Number(document.getElementById('amount_Text').value))
+                syrup_Count = 1
+            }
+            else if(value == 'syrup' && syrup_Count == 1)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) - (500 *Number(document.getElementById('amount_Text').value))
+                syrup_Count = 0
+            }
+            if(value == 'milk' && milk_Count == 0)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) + (500 *Number(document.getElementById('amount_Text').value))
+                milk_Count = 1
+            }
+            else if(value == 'milk' && milk_Count == 1)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) - (500 *Number(document.getElementById('amount_Text').value))
+                milk_Count = 0
+            }
+            if(value == 'whipped' && whipped_Count == 0)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) + (500 *Number(document.getElementById('amount_Text').value))
+                whipped_Count = 1
+            }
+            else if(value == 'whipped' && whipped_Count == 1)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) - (500 *Number(document.getElementById('amount_Text').value))
+                whipped_Count = 0
+            }
+            if(value == 'drizzle' && drizzle_Count == 0)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) + (500 *Number(document.getElementById('amount_Text').value))
+                drizzle_Count = 1
+            }
+            else if(value == 'drizzle' && drizzle_Count == 1)
+            {
+                document.getElementById('total_Price').value = Number(document.getElementById('total_Price').value) - (500 *Number(document.getElementById('amount_Text').value))
+                drizzle_Count = 0
+            }
+        }
+
+        function switch_Img(value)
+        {
+            document.getElementById('shot_Plus').checked = false;
+            document.getElementById('syrup_Plus').checked = false;
+            document.getElementById('milk_Plus').checked = false;
+            document.getElementById('whipped_Plus').checked = false;
+            document.getElementById('drizzle_Plus').checked = false;
+            shot_Count = 0
+            syrup_Count = 0
+            milk_Count = 0
+            whipped_Count = 0
+            drizzle_Count = 0
+    
+            if(value == 'hot' && document.getElementById('aacash').value == 5300)
+            {
+                
+                document.getElementById('main_menu_img').src = 'hot_espresso.png';
+                document.getElementById('aacash').value = 4800
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*4800
+            }
+            if(value == 'hot' && document.getElementById('aacash').value == 5800)
+            {
+                document.getElementById('main_menu_img').src = 'hot_espresso_decaf.png';
+                document.getElementById('aacash').value = 5300
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5300
+            }
+            if(value == 'hot' && document.getElementById('aacash').value == 6000)
+            {
+                document.getElementById('main_menu_img').src = 'hot_latte.png';
+                document.getElementById('aacash').value = 5500
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5500
+            }
+            if(value == 'hot' && document.getElementById('aacash').value == 5500)
+            {
+                document.getElementById('main_menu_img').src = 'hot_tea.png';
+                document.getElementById('aacash').value = 5000
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5000
+            }
+
+
+            if(value == 'ice' && document.getElementById('aacash').value == 4800)
+            {
+                console.log(document.getElementById('aacash').value)
+                document.getElementById('main_menu_img').src = 'espresso.png';
+                document.getElementById('aacash').value = 5300
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5300
+            }
+            if(value == 'ice' && document.getElementById('aacash').value == 5300)
+            {
+                document.getElementById('main_menu_img').src = 'espresso_decaf.png';
+                document.getElementById('aacash').value = 5800
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5800
+            }
+            if(value == 'ice' && document.getElementById('aacash').value == 5500)
+            {
+                document.getElementById('main_menu_img').src = 'latte.png';
+                document.getElementById('aacash').value = 6000
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*6000
+            }
+            if(value == 'ice' && document.getElementById('aacash').value == 5000)
+            {
+                document.getElementById('main_menu_img').src = 'tea.png';
+                document.getElementById('aacash').value = 5500
+                document.getElementById('total_Price').value = Number(document.getElementById('amount_Text').value)*5500
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

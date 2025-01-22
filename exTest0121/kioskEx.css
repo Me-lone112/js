@@ -1,0 +1,69 @@
+body
+{
+    background-color : forestgreen;
+}
+
+
+#menu_Selector
+{
+    background-color: blanchedalmond;
+    height : 100%;
+    width : 30%;
+}
+
+.menu_Button
+{
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  background-color: blanchedalmond;
+  color: black;
+  border : none;
+  
+}
+
+.menu_Button:hover
+{
+    background-color:burlywood;
+}
+
+.menu_Board .move_Button
+{
+    color: white;
+    background-color: forestgreen;
+    text-decoration: none;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+}
+
+.menu_Board .move_Button:hover
+{
+    background-color:yellowgreen;
+}
+
+.menu_img
+{
+    width: 180px;
+    height: 300px;
+}
+
+.pm_Button
+{
+    width: 100%;
+    height: 40px;
+}
+
+.pm_Button:hover
+{
+    background-color:yellowgreen;
+}
+
+div
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
