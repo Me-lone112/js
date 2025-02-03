@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="path" value="aa" onclick="checkButton(this)">aa<br>
+    <input type="checkbox" name="path" value="bb" onclick="checkButton(this)">bb<br>
+    <input type="checkbox" name="path" value="cc" onclick="checkButton(this)">cc<br>
+
+    <script>
+        function checkButton(element){
+            boxs = document.getElementsByName("path")
+
+            boxs.forEach((chk) => {
+                chk.checked = false
+            })
+
+            element.checked = true
+        }
+    </script>
+</body>
+</html>

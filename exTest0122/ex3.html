@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    아메리카노 : 5000원<br>
+    추가메뉴<br>
+    <input type="checkbox" id = "shot">샷추가<br>
+    <input type="checkbox" id = "ice">ICE<br>
+    <button onclick="cash()">계산</button>
+    <input type="text" id="don"><br>
+    <script>
+        function cash()
+        {
+            money = 5000
+            if(document.getElementById("shot").checked == true)
+            {
+                money += 500;
+            }
+            if(document.getElementById("ice").checked == true)
+            {
+                money += 500;
+            }
+            don.value = money
+            sessionStorage.setItem("KIOSK", money)
+        }
+    </script>
+
+
+
+    <a href="tt.html">이동</a>
+</body>
+</html>
