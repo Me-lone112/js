@@ -1,0 +1,92 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 2000px;
+    background-color: blue;
+}
+
+.categories
+{
+    text-decoration:none;                   
+    color: white;                                              
+    width: 40px;                
+    font-size: 20px;                     
+    font-weight: bold;                    
+}
+
+.li_top_login
+{
+    text-align: right;
+}
+
+.div_top_logo
+{
+    width: 100%;
+    position: fixed;
+    background-color: darkolivegreen;
+}
+
+.ul_top_logo
+{
+    list-style-type: none;
+    text-align: center;
+}
+
+.first_page
+{
+    text-decoration:none;                   
+    color: white;                                              
+    width: 40px;                
+    font-size: 20px;                     
+    font-weight: bold;   
+}
+
+.inside_site
+{
+    margin-top: 133px;
+    position: static;
+    height: 800px;
+    width: 100%;
+    border: none;
+    background-color: aqua;
+}
+
+.div_top_bar
+{
+    margin-top: 60px;
+    background-color: #4d4d4d;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    transition: visibility 0.1s ease;
+}
+
+.ul_top_bar
+{
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.li_top_bar
+{                   
+        list-style: none;  
+        color: white;            
+        background-color: #2d2d2d;      
+        line-height: 30px;        
+        vertical-align: middle;   
+        text-align: center; 
+        display: inline;
+        margin: 20px;
+        padding: 10px 40px;
+}
+
+.ul_top_bar :hover
+{
+    color: red;                   
+    background-color: dimgray;
+}

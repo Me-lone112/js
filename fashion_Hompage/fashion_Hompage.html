@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패션 쇼핑몰</title>
+    <!--<link rel="stylesheet" href="fashion_Hompage.css">-->
+</head>
+<body>
+    <div class="top_Login"> 장바구니 로그인 </div>
+    <div class="top_Main">
+        <ul class="top_Main ">
+            <li class="top_Main ">
+                <a>1번</a>
+            </li>
+            <li class="top_Main ">
+                <a>2번</a>
+            </li>
+            <li class="top_Main ">
+                <a>3번</a>
+            </li>
+            <li class="top_Main ">
+                <a>4번</a>
+            </li>
+            <li class="top_Main ">
+                <a>5번</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- postimages 사이트 사용 가능 -->
+
+    <div class="banner">광고 배너</div>
+    <div class="small_banner">오른쪽으로 돌아가는 배너</div>
+    
+    <div class="categories">
+        <div class="category-row">
+            <ul>
+                <li>
+                    <a href="#" onclick="loadCategory('top')">상의</a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadCategory('bottom')">하의</a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadCategory('shoes')">신발</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="category-row">
+            <ul>
+                <li>
+                    <a href="#" onclick="loadCategory('accessory')">액세서리</a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadCategory('bag')">가방</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="product-frame" id="productFrame">카테고리 상품 정보</div>
+    
+    <script>
+        const top_Main = document.querySelector('.top_Main');
+
+        function loadCategory(category) {
+            const products = 
+            {
+                top: '상의 상품 리스트',
+                bottom: '하의 상품 리스트',
+                shoes: '신발 상품 리스트',
+                accessory: '액세서리 상품 리스트',
+                bag: '가방 상품 리스트'
+            };
+            document.getElementById('productFrame').innerText = products[category];
+        }
+
+        window.addEventListener('scroll', function() {
+            
+            const scrollY = window.scrollY;
+    
+            if (scrollY > 0) 
+            {
+                top_Main.style.visibility = 'hidden';
+            } 
+
+            else 
+            {
+                top_Main.style.visibility = 'visible';
+            }
+        });
+    </script>
+</body>
+</html>

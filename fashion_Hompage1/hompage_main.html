@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_style.css">
+    <title>CharMes</title>
+</head>
+<body>
+    <div class="div_top_logo">
+        <ul class="ul_top_logo">
+            <li class="li_top_logo">
+                <a class="first_page" href="C:\Users\2CLASS_003\ex_JS_Project\fashion_Hompage1\hompage_main.html" target="inside_site">로고</a>
+            </li>
+            <li class="li_top_login">
+                장바구니 로그인
+            </li>
+        </ul>
+    </div>
+
+    <div class="div_top_bar" id="div_top_bar">
+        <ul class="ul_top_bar">
+            <li class="li_top_bar">
+                <a class="categories" href="shirts.html" target="inside_site">셔츠</a>
+            </li>
+            <li class="li_top_bar">
+                <a class="categories" href="pants.html" target="inside_site">바지</a>
+            </li>
+            <li class="li_top_bar">
+                <a class="categories" href="shoes.html" target="inside_site">신발</a>
+            </li>
+            <li class="li_top_bar">
+                <a class="categories" href="accessory.html" target="inside_site">악세사리</a>
+            </li>
+            <li class="li_top_bar">
+                <a class="categories" href="bags.html" target="inside_site">가방</a>
+            </li>
+        </ul>
+    </div>
+
+    <iframe name="inside_site" class="inside_site">
+        
+    </iframe>
+
+</body>
+
+<script>
+    const header = document.getElementById('div_top_bar');
+
+    window.addEventListener('scroll', function() {
+        const scrollPosition = window.scrollY;
+
+        if(scrollPosition > 0)
+        {
+            header.style.visibility=`hidden`;
+        }
+        else
+        {
+            header.style.visibility=`visible`;
+        }
+        
+    });
+</script>
+</html>

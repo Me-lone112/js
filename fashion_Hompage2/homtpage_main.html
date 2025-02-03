@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="#" class="nav-item is-active" active-color="orange">Home</a>
+        <a href="#" class="nav-item" active-color="green">About</a>
+        <a href="#" class="nav-item" active-color="blue">Testimonials</a>
+        <a href="#" class="nav-item" active-color="red">Blog</a>
+        <a href="#" class="nav-item" active-color="rebeccapurple">Contact</a>
+        <span class="nav-indicator"></span>
+    </nav>
+
+    <script>
+        var indicator = document.querySelector('.nav-indicator');
+        var items = document.querySelectorAll('.nav-item');
+
+        function handleIndicator(el) {
+        items.forEach(function(item) {
+            item.classList.remove('is-active');
+            item.removeAttribute('style');
+        });
+
+        indicator.style.width = el.offsetWidth + 'px';
+        indicator.style.left = el.offsetLeft + 'px';
+        indicator.style.backgroundColor = el.getAttribute('active-color');
+
+        el.classList.add('is-active');
+        el.style.color = el.getAttribute('active-color');
+        }
+
+        items.forEach(function(item, index) {
+        item.addEventListener('click', function(e) {
+            handleIndicator(e.target);
+        });
+        if (item.classList.contains('is-active')) {
+            handleIndicator(item);
+        }
+        });
+    </script>
+</body>
+
+</html>
