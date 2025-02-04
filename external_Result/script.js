@@ -1,28 +1,92 @@
-$("#nav-1 a").on("click", function() {
-    var position = $(this)
-      .parent().position();
-    var width = $(this)
-      .parent().width();
-    $("#nav-1 .slide1").css({ opacity: 1, left: +position.left, width: width });
+  const header = document.getElementById('nav_top_cate');
+
+  window.addEventListener('scroll', function() {
+      const scrollPosition = window.scrollY;
+
+      if(scrollPosition > 0)
+      {
+          header.style.visibility=`hidden`;
+      }
+      else
+      {
+          header.style.visibility=`visible`;
+      }
   });
-  
-  $("#nav-1 a").on("mouseover", function() {
-    var position = $(this)
-      .parent().position();
-    var width = $(this)
-      .parent().width();
-    $("#nav-1 .slide2").css({ 
-      opacity: 1, left: +position.left, width: width })
-      .addClass("squeeze");
-  });
-  
-  $("#nav-1 a").on("mouseout", function() {
-    $("#nav-1 .slide2").css({ opacity: 0 }).removeClass("squeeze");
-  });
-  
-  var currentWidth = $("#nav-1")
-    .find("li:nth-of-type(3) a")
-    .parent("li")
-    .width();
-  var current = $("li:nth-of-type(3) a").position();
-  $("#nav-1 .slide1").css({ left: +current.left, width: currentWidth });
+
+  const animationOptions = {
+    ease: 'expo.inOut'
+}
+
+const introAnimation = () => {
+    const tl = gsap.timeline({
+        defaults: {
+            ease: animationOptions.ease,
+            duration: 1,
+        }
+    });
+    
+    tl.to('.intro__title', {
+        duration: 1.5,
+        y: 0,
+        autoAlpha: 1,
+        delay: 0.5,
+    })
+    .to('.intro__background--left, .intro__background--right', {
+        scaleX: 1,
+    })
+    .to('.intro__background--left, .intro__background--right', {
+        scaleY: 0,
+        transformOrigin: 'top center',
+    })
+    .to('.intro__title', {
+        duration: 1.5,
+        y: -60,
+        autoAlpha: 0,
+    }, '-=0.6')
+    .to('.intro', {
+        y: '-100%',
+    }, '-=0.5')
+    
+    return tl;
+}
+
+
+const skewInElements = elements => {
+    const tl = gsap.timeline();
+    
+    tl.from(elements, {
+        duration: 1,
+        ease: animationOptions.ease,
+        skewY: -5,
+        autoAlpha: 0,
+        y: 40,
+    })
+    
+    return tl;
+}
+
+
+
+const fadeInElements = elements => {
+    const tl = gsap.timeline();
+    
+    tl.from(elements, {
+        duration: 1,
+        ease: animationOptions.ease,
+        y: '20px',
+        autoAlpha: 0,
+        stagger: 0.1,
+    })
+    
+    return tl;
+}
+
+const master = gsap.timeline({
+    paused: false,
+    delay: 0.2,
+});
+
+
+    
+master
+.add(introAnimation())

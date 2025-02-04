@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="input" id="input">
+    <button id="button">계산</button>
+    <button id="exit">종료</button>
+    <br>
+    <div id="logs" style="width:300px; height:300px; background-color:gold;"></div>
+    <script>
+        $logs=document.querySelector('#logs');
+        document.getElementById("button").addEventListener("click",run);
+        document.getElementById("exit").addEventListener("click",end);
+        function run(){ //괄호 안을 비워두는 이유는?
+            event.preventDefault();
+            a=input.value;
+            k=eval(input.value);
+            $logs.append(`${a}=${k}`,document.createElement('br')); 
+
+        }
+        function end(){
+            exit=confirm("정말 종료하겠습니까?")
+                if(exit==true){
+                    window.close();
+        }
+    }
+    </script>
+</body>
+</html>

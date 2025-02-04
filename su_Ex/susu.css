@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  color: black;
+  width: 100px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.75);
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.menu-item .sub {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  line-height: 80px;
+  list-style: none;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.menu-item .sub li {
+  background-color: orange;
+}
+
+.menu-item .sub li a {
+  text-decoration: none;
+  color: black;
+}
