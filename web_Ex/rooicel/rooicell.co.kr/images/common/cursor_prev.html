@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="ko"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="ko"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="ko"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="ko"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ko"> <!--<![endif]-->
+
+<!-- Mirrored from rooicell.co.kr/images/common/cursor_prev.png by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 07:19:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>
+	루이셀</title>
+<!--[if lt IE 9]>
+<script src="/js/html5shiv.js"></script>
+<![endif]-->
+<meta name="Robots" content="all" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="" />
+<meta name="Author" content="DESIGNPIXEL" />
+<meta name="Copyright" content="(c)DESIGNPIXEL" />
+<meta name="publisher" content="DESIGNPIXEL">
+<meta name="reply-to" content="" />
+<meta name="date" content="" />
+<!-- jquery -->
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>
+<!-- slick -->
+<script type="text/javascript" src="../../js/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/slick.css" />
+<link rel="stylesheet" type="text/css" href="../../../cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+<!-- 공통 css/js -->
+<script src="../../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../css/commonbfee.css?v=20220128" />
+<script src="../../js/indexbfee.js?v=20220128"></script>
+<link rel="stylesheet" type="text/css" href="../../css/index_pcbfee.css?v=20220128" media="screen and (min-width:1280px)" />
+<link rel="stylesheet" type="text/css" href="../../css/index_tabletbfee.css?v=20220128" media="screen and (min-width:768px) and (max-width:1279px)" />
+<link rel="stylesheet" type="text/css" href="../../css/index_mobilebfee.css?v=20220128" media="screen and (max-width:767px)" />
+<link rel="stylesheet" type="text/css" href="../../css/locomotive-scroll.css" />
+<script src="../../js/lodash.min.js"></script>
+<script nomodule src="../../../cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+<script nomodule src="../../../polyfill.io/v3/polyfill.min82a1.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+<script src="../../../cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+<script src="../../../cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="../../js/locomotive-scroll.min.js"></script>
+<script src="../../../code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="../../../ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script src="../../../cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+<script>WebFont.load({google: {families: ['Noto Sans KR', 'Montserrat']}});</script>
+<script type="text/javascript">
+$(document).ready(function () {
+	if($('html').is('.ie6, .ie7, .ie8, ie9')) {
+		$('div.ie_alert_text').show();
+		$('div.ie_alert_text').html('현재 사이트는 IE9 미만의 하위브라우저를 지원하지 않습니다. <br />브라우저를 최신 버전으로 <b>업데이트</b>해 주세요.');
+	}
+});
+</script>
+</head>
+<body class="">
+
+<script language="javascript">
+function setCookie( name, value, expiredays ){
+	var todayDate = new Date();
+	todayDate.setDate( todayDate.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+}
+function pop_close(name,idx){
+	setCookie(name, "done" , 1);
+	$("#layer_pop"+idx).hide();
+}
+
+function pop_hide(idx){
+	$("#layer_pop"+idx).hide();
+}
+
+$(function(){
+	var pop_move = false;
+	$(".main_layer_popup .pop_link").click(function(){
+		var data = $(this).data("pop_idx");
+		if(!pop_move){
+			pop_hide(data);
+		}
+	})
+
+
+
+});
+</script>
+
+
+
+<div id="custom_cursor"><div class="custom_cursor_inner"><div class="custom_cursor_circle"></div></div></div>
+<a href="#contents" id="skip-nav" tabIndex="0">본문 바로가기</a>
+<!-- 하위 브라우저 지원 불가 알림창 -->
+<div class="ie_alert_text"></div>
+<div id="bg"></div>
+
+<header id="header" class="" data-scroll-sticky>
+	<div class="header_wrap">
+		<h1 class="logo">
+			<a href="../../index.html">
+				<span class="blind">logo</span>
+				<svg class="svg_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="156.45px" height="23.424px" viewBox="0 0 156.45 23.424" enable-background="new 0 0 156.45 23.424" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FB3449" d="M43.319,3.463c2.131,2.061,3.466,5.014,3.466,8.296c0,3.279-1.335,6.234-3.466,8.295
+			c-2.13-2.061-3.465-5.016-3.465-8.295C39.854,8.477,41.188,5.523,43.319,3.463z"/>
+		<g>
+			<path class="txt" fill="#FFFFFF" d="M12.375,11.96c2.026,0,4.569-1.544,5.394-3.567c0.619-1.518,0.619-3.104,0.001-4.621
+				c-0.823-2.025-3.367-3.57-5.395-3.57H0v0.115v0.086v11.155v0.403v11.154h2.473V11.96h3.168c0.781,0,1.529,0.338,2.082,0.941
+				l9.346,10.213h3.05L9.911,11.96H12.375z M2.473,11.557V0.604h7.838c2.338,0,4.557,1.58,5.168,4.046
+				c0.235,0.949,0.235,1.913,0,2.861c-0.611,2.466-2.83,4.046-5.168,4.046H2.473z"/>
+			<path class="txt" fill="#FFFFFF" d="M61.818,5.236c-0.487-0.621-1.041-1.199-1.654-1.727
+				c-0.307-0.264-0.627-0.516-0.961-0.753C58.534,2.281,57.812,1.86,57.045,1.5c-1.919-0.898-4.117-1.408-6.454-1.408
+				c-2.336,0-4.535,0.51-6.454,1.408c-0.281,0.132-0.549,0.281-0.818,0.428c-0.268-0.147-0.537-0.296-0.818-0.428
+				c-1.918-0.898-4.117-1.408-6.454-1.408c-2.336,0-4.535,0.51-6.454,1.408c-0.767,0.359-1.49,0.781-2.158,1.256
+				c-0.334,0.238-0.656,0.489-0.962,0.753c-0.613,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.487,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.962,0.754c0.668,0.475,1.391,0.896,2.158,1.255
+				c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408c0.281-0.132,0.55-0.28,0.818-0.428
+				c0.269,0.147,0.537,0.296,0.818,0.428c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408
+				c0.767-0.358,1.489-0.78,2.158-1.255c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.378-3.145-1.064-4.541
+				C62.723,6.52,62.305,5.856,61.818,5.236z M37.148,22.974c-0.364,0.026-0.729,0.048-1.101,0.048s-0.736-0.021-1.1-0.048
+				c-5.414-0.578-9.637-5.379-9.637-11.215c0-5.837,4.223-10.637,9.635-11.216c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.373,0,0.738,0.021,1.103,0.048c1.895,0.203,3.637,0.932,5.11,2.033c-0.093,0.063-0.191,0.117-0.282,0.181
+				c-0.334,0.238-0.655,0.489-0.961,0.753c-0.612,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.486,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.961,0.754c0.09,0.063,0.189,0.118,0.282,0.181
+				C40.787,22.042,39.043,22.771,37.148,22.974z M43.319,20.054c-2.13-2.061-3.465-5.016-3.465-8.295
+				c0-3.282,1.335-6.235,3.465-8.296c2.131,2.061,3.466,5.014,3.466,8.296C46.785,15.038,45.45,17.993,43.319,20.054z
+				 M51.691,22.974c-0.364,0.026-0.729,0.048-1.101,0.048c-0.371,0-0.737-0.021-1.1-0.048c-1.896-0.202-3.639-0.932-5.113-2.032
+				c0.092-0.063,0.191-0.118,0.282-0.181c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.379-3.145-1.064-4.541
+				c-0.342-0.698-0.761-1.361-1.248-1.981c-0.487-0.621-1.041-1.199-1.654-1.727c-0.306-0.264-0.627-0.516-0.961-0.753
+				c-0.09-0.064-0.189-0.119-0.282-0.181c1.473-1.101,3.216-1.83,5.111-2.033c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.372,0,0.738,0.021,1.103,0.048c5.412,0.58,9.635,5.379,9.635,11.216C61.328,17.595,57.104,22.396,51.691,22.974z"/>
+			<polygon class="txt" fill="#FFFFFF" points="99.97,0.402 99.971,0.402 99.971,11.356 99.97,11.356 99.97,11.758 
+				99.971,11.758 99.971,22.712 99.97,22.712 99.97,23.114 117.783,23.114 117.783,22.712 102.444,22.712 102.444,11.758 
+				115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0 			"/>
+			<rect class="txt" x="67.031" y="0.201" fill="#FFFFFF" width="2.473" height="23.115"/>
+			<polygon class="txt" fill="#FFFFFF" points="122.646,0 120.172,0 120.172,22.712 120.172,22.712 120.172,23.114 
+				137.116,23.114 137.116,22.712 122.646,22.712 			"/>
+			<polygon class="txt" fill="#FFFFFF" points="141.978,22.712 141.978,0 139.506,0 139.506,22.712 139.506,22.712 
+				139.506,23.114 156.45,23.114 156.45,22.712 			"/>
+			<path class="txt" fill="#FFFFFF" d="M84.84,0.542c0.365-0.026,0.73-0.048,1.102-0.048c0.373,0,0.739,0.021,1.104,0.048
+				c2.917,0.313,5.48,1.858,7.232,4.125h2.398c-0.361-0.405-0.742-0.797-1.159-1.157c-0.308-0.264-0.628-0.516-0.962-0.753
+				c-0.67-0.475-1.391-0.896-2.158-1.256c-1.919-0.898-4.117-1.408-6.455-1.408c-2.336,0-4.534,0.51-6.452,1.408
+				C78.721,1.86,78,2.281,77.331,2.756c-0.334,0.238-0.655,0.489-0.961,0.753c-0.613,0.527-1.167,1.105-1.654,1.727
+				c-0.486,0.62-0.905,1.283-1.248,1.981c-0.685,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54
+				c0.343,0.698,0.762,1.361,1.248,1.981c0.487,0.621,1.041,1.199,1.654,1.727c0.306,0.264,0.627,0.516,0.961,0.754
+				c0.669,0.475,1.391,0.896,2.159,1.255c1.918,0.897,4.116,1.408,6.452,1.408c2.338,0,4.536-0.511,6.455-1.408
+				c0.768-0.358,1.488-0.78,2.158-1.255c0.334-0.238,0.654-0.49,0.962-0.754c0.417-0.361,0.798-0.753,1.159-1.158h-2.398
+				c-1.752,2.268-4.316,3.813-7.234,4.125c-0.363,0.026-0.729,0.048-1.102,0.048c-0.37,0-0.736-0.021-1.1-0.048
+				c-5.412-0.578-9.637-5.379-9.637-11.215C75.206,5.922,79.428,1.122,84.84,0.542z"/>
+		</g>
+	</g>
+</g>
+</svg>
+			</a>
+		</h1>
+		<nav id="nav">
+			<ul class="gnb">
+				<li class="menu">
+					<a href="../../m11.html" class="custom_mousemove small_h"><div>BRAND</div></a>
+					<div class="lnb sub1">
+						<ul class="dep2">
+							<li><a href="../../m11.html">루이셀</a></li>
+							<li><a href="../../m12.html">로코블란코</a></li>
+							<li><a href="../../m13.html">그리앙스</a></li>
+						</ul>
+					</div><!--lnb-->
+				</li>
+				<li class="menu">
+					<a href="../../product.html" class="custom_mousemove small_h"><div>PRODUCTS</div></a>
+					<div class="lnb sub2">
+						<ul class="dep2">
+							<li><a href="../../product.html">전체보기</a></li>
+							<li><a href="../../product31d2.html?cate=1">미백라인</a></li>
+							<li><a href="../../productd896.html?cate=2">수분라인</a></li>
+							<li><a href="../../product044b.html?cate=3">주름라인</a></li>
+							<li><a href="../../product80e5.html?cate=4">Special Edition</a></li>
+						</ul>
+					</div><!--lnb-->
+				</li>
+				<li class="menu">
+					<a href="../../m31.html" class="custom_mousemove small_h"><div>OEM/ODM</div></a>
+					<div class="lnb sub3">
+						<ul class="dep2">
+							<li><a href="../../m31.html">프로세스</a></li>
+							<li><a href="../../m32.html">R&D</a></li>
+							<li><a href="../../m33.html">제조공정</a></li>
+							<li><a href="../../m34.html">Farm</a></li>
+							<li><a href="../../m35.html">글로벌네트워크</a></li>
+						</ul>
+					</div><!--lnb-->
+				</li>
+				<li class="menu">
+					<a href="../../m41.html" class="custom_mousemove small_h"><div>CONTACT</div></a>
+					<div class="lnb sub4">
+						<ul class="dep2">
+							<li><a href="../../m41.html">Contact</a></li>
+						</ul>
+					</div><!--lnb-->
+				</li>
+		</nav>
+		<!-- e : nav -->
+		<!-- s : group -->
+		<div class="group">
+			<div class="language">
+				<button type="button">KOR</button>
+				<ul class="list">
+					<li class="on"><a href="../../index.html">KOR</a></li>
+					<li><a href="../../en/index.html" target="_blank">ENG</a></li>
+					<li><a href="../../cn/index.html" target="_blank">CHN</a></li>
+				</ul>
+			</div>
+			<button type="button" class="hamburger_btn open custom_mousemove">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+		<!-- e : group -->
+	</div>
+</header>
+	<div id="allmenu">
+	<div class="allmenu">
+		<button type="button" class="close follow i custom_mousemove"><span class="blind">닫기</span></button>
+		<div class="inner">
+			<div class="menu_bg">
+				<div class="i"><img src="allmenu_leaf.png" alt="나뭇잎"></div>
+				<div class="bg"></div>
+				<div class="slogan">
+					<a href="../../index.html" class="logo dark custom_mousemove"><svg class="svg_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="156.45px" height="23.424px" viewBox="0 0 156.45 23.424" enable-background="new 0 0 156.45 23.424" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FB3449" d="M43.319,3.463c2.131,2.061,3.466,5.014,3.466,8.296c0,3.279-1.335,6.234-3.466,8.295
+			c-2.13-2.061-3.465-5.016-3.465-8.295C39.854,8.477,41.188,5.523,43.319,3.463z"/>
+		<g>
+			<path class="txt" fill="#FFFFFF" d="M12.375,11.96c2.026,0,4.569-1.544,5.394-3.567c0.619-1.518,0.619-3.104,0.001-4.621
+				c-0.823-2.025-3.367-3.57-5.395-3.57H0v0.115v0.086v11.155v0.403v11.154h2.473V11.96h3.168c0.781,0,1.529,0.338,2.082,0.941
+				l9.346,10.213h3.05L9.911,11.96H12.375z M2.473,11.557V0.604h7.838c2.338,0,4.557,1.58,5.168,4.046
+				c0.235,0.949,0.235,1.913,0,2.861c-0.611,2.466-2.83,4.046-5.168,4.046H2.473z"/>
+			<path class="txt" fill="#FFFFFF" d="M61.818,5.236c-0.487-0.621-1.041-1.199-1.654-1.727
+				c-0.307-0.264-0.627-0.516-0.961-0.753C58.534,2.281,57.812,1.86,57.045,1.5c-1.919-0.898-4.117-1.408-6.454-1.408
+				c-2.336,0-4.535,0.51-6.454,1.408c-0.281,0.132-0.549,0.281-0.818,0.428c-0.268-0.147-0.537-0.296-0.818-0.428
+				c-1.918-0.898-4.117-1.408-6.454-1.408c-2.336,0-4.535,0.51-6.454,1.408c-0.767,0.359-1.49,0.781-2.158,1.256
+				c-0.334,0.238-0.656,0.489-0.962,0.753c-0.613,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.487,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.962,0.754c0.668,0.475,1.391,0.896,2.158,1.255
+				c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408c0.281-0.132,0.55-0.28,0.818-0.428
+				c0.269,0.147,0.537,0.296,0.818,0.428c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408
+				c0.767-0.358,1.489-0.78,2.158-1.255c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.378-3.145-1.064-4.541
+				C62.723,6.52,62.305,5.856,61.818,5.236z M37.148,22.974c-0.364,0.026-0.729,0.048-1.101,0.048s-0.736-0.021-1.1-0.048
+				c-5.414-0.578-9.637-5.379-9.637-11.215c0-5.837,4.223-10.637,9.635-11.216c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.373,0,0.738,0.021,1.103,0.048c1.895,0.203,3.637,0.932,5.11,2.033c-0.093,0.063-0.191,0.117-0.282,0.181
+				c-0.334,0.238-0.655,0.489-0.961,0.753c-0.612,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.486,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.961,0.754c0.09,0.063,0.189,0.118,0.282,0.181
+				C40.787,22.042,39.043,22.771,37.148,22.974z M43.319,20.054c-2.13-2.061-3.465-5.016-3.465-8.295
+				c0-3.282,1.335-6.235,3.465-8.296c2.131,2.061,3.466,5.014,3.466,8.296C46.785,15.038,45.45,17.993,43.319,20.054z
+				 M51.691,22.974c-0.364,0.026-0.729,0.048-1.101,0.048c-0.371,0-0.737-0.021-1.1-0.048c-1.896-0.202-3.639-0.932-5.113-2.032
+				c0.092-0.063,0.191-0.118,0.282-0.181c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.379-3.145-1.064-4.541
+				c-0.342-0.698-0.761-1.361-1.248-1.981c-0.487-0.621-1.041-1.199-1.654-1.727c-0.306-0.264-0.627-0.516-0.961-0.753
+				c-0.09-0.064-0.189-0.119-0.282-0.181c1.473-1.101,3.216-1.83,5.111-2.033c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.372,0,0.738,0.021,1.103,0.048c5.412,0.58,9.635,5.379,9.635,11.216C61.328,17.595,57.104,22.396,51.691,22.974z"/>
+			<polygon class="txt" fill="#FFFFFF" points="99.97,0.402 99.971,0.402 99.971,11.356 99.97,11.356 99.97,11.758 
+				99.971,11.758 99.971,22.712 99.97,22.712 99.97,23.114 117.783,23.114 117.783,22.712 102.444,22.712 102.444,11.758 
+				115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0 			"/>
+			<rect class="txt" x="67.031" y="0.201" fill="#FFFFFF" width="2.473" height="23.115"/>
+			<polygon class="txt" fill="#FFFFFF" points="122.646,0 120.172,0 120.172,22.712 120.172,22.712 120.172,23.114 
+				137.116,23.114 137.116,22.712 122.646,22.712 			"/>
+			<polygon class="txt" fill="#FFFFFF" points="141.978,22.712 141.978,0 139.506,0 139.506,22.712 139.506,22.712 
+				139.506,23.114 156.45,23.114 156.45,22.712 			"/>
+			<path class="txt" fill="#FFFFFF" d="M84.84,0.542c0.365-0.026,0.73-0.048,1.102-0.048c0.373,0,0.739,0.021,1.104,0.048
+				c2.917,0.313,5.48,1.858,7.232,4.125h2.398c-0.361-0.405-0.742-0.797-1.159-1.157c-0.308-0.264-0.628-0.516-0.962-0.753
+				c-0.67-0.475-1.391-0.896-2.158-1.256c-1.919-0.898-4.117-1.408-6.455-1.408c-2.336,0-4.534,0.51-6.452,1.408
+				C78.721,1.86,78,2.281,77.331,2.756c-0.334,0.238-0.655,0.489-0.961,0.753c-0.613,0.527-1.167,1.105-1.654,1.727
+				c-0.486,0.62-0.905,1.283-1.248,1.981c-0.685,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54
+				c0.343,0.698,0.762,1.361,1.248,1.981c0.487,0.621,1.041,1.199,1.654,1.727c0.306,0.264,0.627,0.516,0.961,0.754
+				c0.669,0.475,1.391,0.896,2.159,1.255c1.918,0.897,4.116,1.408,6.452,1.408c2.338,0,4.536-0.511,6.455-1.408
+				c0.768-0.358,1.488-0.78,2.158-1.255c0.334-0.238,0.654-0.49,0.962-0.754c0.417-0.361,0.798-0.753,1.159-1.158h-2.398
+				c-1.752,2.268-4.316,3.813-7.234,4.125c-0.363,0.026-0.729,0.048-1.102,0.048c-0.37,0-0.736-0.021-1.1-0.048
+				c-5.412-0.578-9.637-5.379-9.637-11.215C75.206,5.922,79.428,1.122,84.84,0.542z"/>
+		</g>
+	</g>
+</g>
+</svg>
+</a>
+					<div class="tit">
+						<span>Keep your beauty</span>
+						<span>for a long time.</span>
+					</div>
+				</div>
+			</div>
+			<div class="all_gnb_wrap">
+				<ul class="all_gnb">
+					<li class="menu">
+						<div class="dep1">
+							<div class="title">Brand</div>
+						</div>
+						<ul class="sub_menu dep2 txt1">
+							<li><a href="../../m11.html">루이셀</a></li>
+							<li><a href="../../m12.html">로코블란코</a></li>
+							<li><a href="../../m13.html">그리앙스</a></li>
+						</ul>
+					</li>
+					<li class="menu">
+						<div class="dep1">
+							<div class="title">Products</div>
+						</div>
+						<ul class="sub_menu dep2 txt1">
+							<li><a href="../../product.html">전체보기</a></li>
+							<li><a href="../../product31d2.html?cate=1">미백라인</a></li>
+							<li><a href="../../productd896.html?cate=2">수분라인</a></li>
+							<li><a href="../../product044b.html?cate=3">주름라인</a></li>
+							<li><a href="../../product80e5.html?cate=4">Special Edition</a></li>
+						</ul>
+					</li>
+					<li class="menu">
+						<div class="dep1">
+							<div class="title">OEM/ODM</div>
+						</div>
+						<ul class="sub_menu dep2 txt1">
+							<li><a href="../../m31.html">프로세스</a></li>
+							<li><a href="../../m32.html">R&D</a></li>
+							<li><a href="../../m33.html">제조공정</a></li>
+							<li><a href="../../m34.html">Farm</a></li>
+							<li><a href="../../m35.html">글로벌네트워크</a></li>
+						</ul>
+					</li>
+					<li class="menu">
+						<div class="dep1">
+							<div class="title">Contact</div>
+						</div>
+						<ul class="sub_menu dep2 txt1">
+							<li><a href="../../m41.html">Contact</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- all_gnb_wrap -->
+		</div>
+	</div>
+</div><div id="wrap" class="page_scroll_wrap ">
+<!-- //header -->		
+<div id="container" data-scroll>
+<div id="contents">
+<main role="main"><div class="backgroud_visual" data-scroll data-scroll-sticky data-scroll-target="#section_wrap">
+	<!--<div class="img"  style="background:url('/images/main/v01.jpg')no-repeat center/cover;" ></div>-->
+	<div class="video_wrap">
+		<video id="myVideo" muted="muted" width="100%" preload="auto" autoplay loop playsinline>
+			<source src="../main20220318.mp4" type="video/mp4">
+		</video>
+	</div>
+</div>
+<div id="section_wrap">
+	<section class="section sec1 main_visual" data-scroll>
+		<div class="contents cover_height">
+			<div class="sec_title_g">
+				<div class="title1 split">Rooicell</div>
+			</div><!-- sec_title_g -->
+		</div>
+	</section>
+	<section class="section sec2 introduction" data-scroll>
+		<div class="contents cover_height" data-scroll>
+			<div class="sec_title_g" data-scroll data-scroll-speed="2.6" data-scroll-delay="0.2">
+				<div class="g ani" data-scroll>
+					<div class="title2" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">Cosmetics <br>with Nature</div>
+					<div class="img tm_view">
+						<span style="background:url('../main/nature_bg.jpg')no-repeat center/cover;"></span>
+					</div>
+					<div class="title3">
+						자연에서 찾은 <br>순수한 아름다움의 비밀
+					</div>
+					<div class="link_g">
+						<a href="../../m11.html" class="view_more follow i custom_mousemove"><div class="txt">BRAND STORY</div></a>
+					</div>
+				</div>
+			</div><!-- sec_title_g -->
+			<div class="img pc_view" data-scroll>
+				<span style="background:url('../main/nature_bg.jpg')no-repeat center/cover;"></span>
+			</div>
+		</div>
+	</section>
+	<section class="section sec3 best_product" data-scroll>
+		<div class="contents cover_height">
+			<div class="sec_title_g title_g1" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+				<div class="title2 ani" data-scroll>Best Product</div>
+			</div><!-- sec_title_g -->
+			<div id="con_fix1" class=" fix_wrap">
+				<div class="fix_con">
+					<div class="g" data-scroll data-scroll-sticky data-scroll-target="#con_fix1">
+						<div class="sec_title_g title_g2" data-scroll>
+							<div class="title3">그 시절 그대로, <br>변하지 않는 아름다움을 <br>만들어보세요</div>
+							<div class="link_g">
+								<a href="../../product.html" class="view_more follow i custom_mousemove"><div class="txt">PRODUCT</div></a>
+							</div>
+						</div><!-- sec_title_g -->
+					</div>
+				</div><!-- fix_con -->
+				<div class="more_con" data-scroll>
+					<div class="item_show prod_show" data-scroll>
+							
+						<div class="item item1 ani" data-scroll>
+							<a href="../../product_view6e19.html?idx=23" class="follow i custom_mousemove">
+								<div class="info">
+									<div class="tit"><p class="e_">ETERNO</p></div>
+									<div class="s_tit"><p class="e_">에떼르노 EGF 세럼</p></div>
+								</div>
+																<img src="../../data/main/file1_1650008043enowuc431g.jpg" class="img" alt="루이셀 제품">
+																<div class="hover">
+									<div class="group">
+										<div class="title"><p class="e_">에떼르노 EGF 세럼</p></div>
+										<div class="price">96,000원</div>
+									</div>
+								</div><!-- hover -->
+							</a>
+						</div>
+							
+						<div class="item item1 ani" data-scroll>
+							<a href="../../product_view6b06.html?idx=22" class="follow i custom_mousemove">
+								<div class="info">
+									<div class="tit"><p class="e_">ETERNO</p></div>
+									<div class="s_tit"><p class="e_">에떼르노 콜라겐 세럼</p></div>
+								</div>
+																<img src="../../data/main/file1_1650008078q4b2hs8386.jpg" class="img" alt="루이셀 제품">
+																<div class="hover">
+									<div class="group">
+										<div class="title"><p class="e_">ETERNO COLLAGEN SERUM</p></div>
+										<div class="price">80,000원</div>
+									</div>
+								</div><!-- hover -->
+							</a>
+						</div>
+							
+						<div class="item item1 ani" data-scroll>
+							<a href="../../product_viewe266.html?idx=21" class="follow i custom_mousemove">
+								<div class="info">
+									<div class="tit"><p class="e_">ETERNO</p></div>
+									<div class="s_tit"><p class="e_">에떼르노 모이스처 세럼</p></div>
+								</div>
+																<img src="../../data/main/file1_16500081118hbf6vbvon.jpg" class="img" alt="루이셀 제품">
+																<div class="hover">
+									<div class="group">
+										<div class="title"><p class="e_">에떼르노 모이스처 세럼</p></div>
+										<div class="price">70,000원</div>
+									</div>
+								</div><!-- hover -->
+							</a>
+						</div>
+							
+						<div class="item item1 ani" data-scroll>
+							<a href="../../product_view6daa.html?idx=20" class="follow i custom_mousemove">
+								<div class="info">
+									<div class="tit"><p class="e_">ETERNO</p></div>
+									<div class="s_tit"><p class="e_">에떼르노 비타-C 세럼</p></div>
+								</div>
+																<img src="../../data/main/file1_1650008156gt5l0l43zm.jpg" class="img" alt="루이셀 제품">
+																<div class="hover">
+									<div class="group">
+										<div class="title"><p class="e_">에떼르노 비타-C 세럼</p></div>
+										<div class="price">80,000원</div>
+									</div>
+								</div><!-- hover -->
+							</a>
+						</div>
+											
+					</div>
+				</div><!-- more_con -->
+			</div>
+		</div>
+	</section>
+	<section class="section sec4 our_business" data-scroll>
+		<div class="contents cover_height" data-scroll>
+			<div class="sec_title_g" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+				<div class="title2 ani" data-scroll>Our <br>Business</div>
+			</div><!-- sec_title_g -->
+			<div class="item_wrap ani" data-scroll>
+				<div class="item " data-scroll>
+					<a href="../../m32.html" class="follow i custom_mousemove">
+						<span class="bg" style="background: url('../main/business_bg1.jpg')no-repeat center/cover;"></span>
+						<div class="info">
+							<div class="tit">R&D</div>
+							<div class="txt1">
+								오래도록 순수한 아름다움을 원하시는 고객을 위해 <br>창의적이고 지속적인 연구개발로 인체에 가장 적합한 고기능성 제품을 제안합니다.
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item " data-scroll>
+					<a href="../../m31.html" class="follow i custom_mousemove">
+						<span class="bg" style="background: url('../main/business_bg2.jpg')no-repeat center/cover;"></span>
+						<div class="info">
+							<div class="tit">OEM/ODM</div>
+							<div class="txt1">
+								고객에게 단순히 제품만 제공하지 않습니다. <br>브랜드 가치를 창조하는 최고의 비즈니스 파트너가 되겠습니다.
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="item " data-scroll>
+					<a href="../../m34.html" class="follow i custom_mousemove">
+						<span class="bg" style="background: url('../main/business_bg3.jpg')no-repeat center/cover;"></span>
+						<div class="info">
+							<div class="tit">ECO Farm</div>
+							<div class="txt1">
+								라이프투게더에서는 직영중인 ECO FARM 농장에서 직접 재배한 <br>자연원료를 추출하여 제품을 만들고 있습니다.
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section sec5 instagram" data-scroll>
+		<div class="contents cover_height" data-scroll>
+			<div class="sec_title_g" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+				<div class="title4 ">@rooicell_official</div>
+				<div class="title2 ">Instagram</div>
+			</div><!-- sec_title_g -->
+			<div class="instagram_feed ani" data-scroll>
+					
+				<div class="feed" data-scroll>
+					<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"  class="follow i custom_mousemove">
+						<span style="background: url('../../data/insta/file1_1650002902aj9f9lkla3.jpg')no-repeat center/cover;"></span>
+						<div class="heart">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								 y="0px" width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738" enable-background="new 0 0 55.343 49.738"
+								 xml:space="preserve">
+							<g>
+								<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z"/>
+							</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+					
+				<div class="feed" data-scroll>
+					<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"  class="follow i custom_mousemove">
+						<span style="background: url('../../data/insta/file1_16500029154pri8wja3e.jpg')no-repeat center/cover;"></span>
+						<div class="heart">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								 y="0px" width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738" enable-background="new 0 0 55.343 49.738"
+								 xml:space="preserve">
+							<g>
+								<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z"/>
+							</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+					
+				<div class="feed" data-scroll>
+					<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"  class="follow i custom_mousemove">
+						<span style="background: url('../../data/insta/file1_1650002926ntslx0s69m.jpg')no-repeat center/cover;"></span>
+						<div class="heart">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								 y="0px" width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738" enable-background="new 0 0 55.343 49.738"
+								 xml:space="preserve">
+							<g>
+								<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z"/>
+							</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+					
+				<div class="feed" data-scroll>
+					<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"  class="follow i custom_mousemove">
+						<span style="background: url('../../data/insta/file1_1650002949cijkhtz8lu.jpg')no-repeat center/cover;"></span>
+						<div class="heart">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								 y="0px" width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738" enable-background="new 0 0 55.343 49.738"
+								 xml:space="preserve">
+							<g>
+								<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z"/>
+							</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+					
+				<div class="feed" data-scroll>
+					<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"  class="follow i custom_mousemove">
+						<span style="background: url('../../data/insta/file1_1650002961sp5zvh148r.jpg')no-repeat center/cover;"></span>
+						<div class="heart">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								 y="0px" width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738" enable-background="new 0 0 55.343 49.738"
+								 xml:space="preserve">
+							<g>
+								<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z"/>
+							</g>
+							</svg>
+						</div>
+					</a>
+				</div>
+							</div>
+		</div>
+	</section>
+</div>
+
+<div id="scroll_btn" class="scroll_btn" data-scroll data-scroll-sticky data-scroll-target="#section_wrap">
+	<div class="btn_g">
+	</div>
+</div>
+
+
+<div id="scroll_wrap" class="up"  data-scroll data-scroll-sticky data-scroll-target="#container">
+	<a href="#wrap" data-scroll-to>
+		<div class="icon">
+			<div class="arrow_area">
+				<span>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+						 y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+					<g>
+						<g>
+							<path fill="none" stroke="#ffffff" stroke-miterlimit="10" d="M27.063,20.201c0,3.173-2.574,5.746-5.746,5.746"/>
+							<path fill="none" stroke="#ffffff" stroke-miterlimit="10" d="M27.021,20.201c0,3.173,2.572,5.746,5.746,5.746"/>
+						</g>
+						<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="27.041" y1="34.799" x2="27.041" y2="20.201"/>
+					</g>
+					</svg>
+					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+						 y="0px" width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+					<g>
+						<g>
+							<path fill="none" stroke="#ffffff" stroke-miterlimit="10" d="M27.063,20.201c0,3.173-2.574,5.746-5.746,5.746"/>
+							<path fill="none" stroke="#ffffff" stroke-miterlimit="10" d="M27.021,20.201c0,3.173,2.572,5.746,5.746,5.746"/>
+						</g>
+						<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="27.041" y1="34.799" x2="27.041" y2="20.201"/>
+					</g>
+					</svg>
+				</span>
+			</div>
+		</div>
+	</a>
+</div>
+</main>
+</div><!--//container-->
+</div><!--//contents -->
+<footer>
+	<div class="foot_area1">
+		<div class="inner">
+			<div class="logo">
+				<svg class="svg_logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="156.45px" height="23.424px" viewBox="0 0 156.45 23.424" enable-background="new 0 0 156.45 23.424" xml:space="preserve">
+<g>
+	<g>
+		<path fill="#FB3449" d="M43.319,3.463c2.131,2.061,3.466,5.014,3.466,8.296c0,3.279-1.335,6.234-3.466,8.295
+			c-2.13-2.061-3.465-5.016-3.465-8.295C39.854,8.477,41.188,5.523,43.319,3.463z"/>
+		<g>
+			<path class="txt" fill="#FFFFFF" d="M12.375,11.96c2.026,0,4.569-1.544,5.394-3.567c0.619-1.518,0.619-3.104,0.001-4.621
+				c-0.823-2.025-3.367-3.57-5.395-3.57H0v0.115v0.086v11.155v0.403v11.154h2.473V11.96h3.168c0.781,0,1.529,0.338,2.082,0.941
+				l9.346,10.213h3.05L9.911,11.96H12.375z M2.473,11.557V0.604h7.838c2.338,0,4.557,1.58,5.168,4.046
+				c0.235,0.949,0.235,1.913,0,2.861c-0.611,2.466-2.83,4.046-5.168,4.046H2.473z"/>
+			<path class="txt" fill="#FFFFFF" d="M61.818,5.236c-0.487-0.621-1.041-1.199-1.654-1.727
+				c-0.307-0.264-0.627-0.516-0.961-0.753C58.534,2.281,57.812,1.86,57.045,1.5c-1.919-0.898-4.117-1.408-6.454-1.408
+				c-2.336,0-4.535,0.51-6.454,1.408c-0.281,0.132-0.549,0.281-0.818,0.428c-0.268-0.147-0.537-0.296-0.818-0.428
+				c-1.918-0.898-4.117-1.408-6.454-1.408c-2.336,0-4.535,0.51-6.454,1.408c-0.767,0.359-1.49,0.781-2.158,1.256
+				c-0.334,0.238-0.656,0.489-0.962,0.753c-0.613,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.487,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.962,0.754c0.668,0.475,1.391,0.896,2.158,1.255
+				c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408c0.281-0.132,0.55-0.28,0.818-0.428
+				c0.269,0.147,0.537,0.296,0.818,0.428c1.918,0.897,4.117,1.408,6.454,1.408c2.337,0,4.535-0.511,6.454-1.408
+				c0.767-0.358,1.489-0.78,2.158-1.255c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.378-3.145-1.064-4.541
+				C62.723,6.52,62.305,5.856,61.818,5.236z M37.148,22.974c-0.364,0.026-0.729,0.048-1.101,0.048s-0.736-0.021-1.1-0.048
+				c-5.414-0.578-9.637-5.379-9.637-11.215c0-5.837,4.223-10.637,9.635-11.216c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.373,0,0.738,0.021,1.103,0.048c1.895,0.203,3.637,0.932,5.11,2.033c-0.093,0.063-0.191,0.117-0.282,0.181
+				c-0.334,0.238-0.655,0.489-0.961,0.753c-0.612,0.527-1.167,1.105-1.653,1.727c-0.487,0.62-0.906,1.283-1.248,1.981
+				c-0.686,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54c0.342,0.698,0.761,1.361,1.248,1.981
+				c0.486,0.621,1.041,1.199,1.653,1.727c0.306,0.264,0.627,0.516,0.961,0.754c0.09,0.063,0.189,0.118,0.282,0.181
+				C40.787,22.042,39.043,22.771,37.148,22.974z M43.319,20.054c-2.13-2.061-3.465-5.016-3.465-8.295
+				c0-3.282,1.335-6.235,3.465-8.296c2.131,2.061,3.466,5.014,3.466,8.296C46.785,15.038,45.45,17.993,43.319,20.054z
+				 M51.691,22.974c-0.364,0.026-0.729,0.048-1.101,0.048c-0.371,0-0.737-0.021-1.1-0.048c-1.896-0.202-3.639-0.932-5.113-2.032
+				c0.092-0.063,0.191-0.118,0.282-0.181c0.334-0.238,0.655-0.49,0.961-0.754c0.613-0.527,1.167-1.105,1.654-1.727
+				c0.486-0.62,0.905-1.283,1.248-1.981c0.686-1.396,1.064-2.93,1.064-4.54v-0.001c0-1.61-0.379-3.145-1.064-4.541
+				c-0.342-0.698-0.761-1.361-1.248-1.981c-0.487-0.621-1.041-1.199-1.654-1.727c-0.306-0.264-0.627-0.516-0.961-0.753
+				c-0.09-0.064-0.189-0.119-0.282-0.181c1.473-1.101,3.216-1.83,5.111-2.033c0.364-0.026,0.73-0.048,1.102-0.048
+				c0.372,0,0.738,0.021,1.103,0.048c5.412,0.58,9.635,5.379,9.635,11.216C61.328,17.595,57.104,22.396,51.691,22.974z"/>
+			<polygon class="txt" fill="#FFFFFF" points="99.97,0.402 99.971,0.402 99.971,11.356 99.97,11.356 99.97,11.758 
+				99.971,11.758 99.971,22.712 99.97,22.712 99.97,23.114 117.783,23.114 117.783,22.712 102.444,22.712 102.444,11.758 
+				115.127,11.758 115.127,11.356 102.444,11.356 102.444,0.402 117.783,0.402 117.783,0 99.97,0 			"/>
+			<rect class="txt" x="67.031" y="0.201" fill="#FFFFFF" width="2.473" height="23.115"/>
+			<polygon class="txt" fill="#FFFFFF" points="122.646,0 120.172,0 120.172,22.712 120.172,22.712 120.172,23.114 
+				137.116,23.114 137.116,22.712 122.646,22.712 			"/>
+			<polygon class="txt" fill="#FFFFFF" points="141.978,22.712 141.978,0 139.506,0 139.506,22.712 139.506,22.712 
+				139.506,23.114 156.45,23.114 156.45,22.712 			"/>
+			<path class="txt" fill="#FFFFFF" d="M84.84,0.542c0.365-0.026,0.73-0.048,1.102-0.048c0.373,0,0.739,0.021,1.104,0.048
+				c2.917,0.313,5.48,1.858,7.232,4.125h2.398c-0.361-0.405-0.742-0.797-1.159-1.157c-0.308-0.264-0.628-0.516-0.962-0.753
+				c-0.67-0.475-1.391-0.896-2.158-1.256c-1.919-0.898-4.117-1.408-6.455-1.408c-2.336,0-4.534,0.51-6.452,1.408
+				C78.721,1.86,78,2.281,77.331,2.756c-0.334,0.238-0.655,0.489-0.961,0.753c-0.613,0.527-1.167,1.105-1.654,1.727
+				c-0.486,0.62-0.905,1.283-1.248,1.981c-0.685,1.396-1.064,2.93-1.064,4.541v0.001c0,1.61,0.379,3.145,1.064,4.54
+				c0.343,0.698,0.762,1.361,1.248,1.981c0.487,0.621,1.041,1.199,1.654,1.727c0.306,0.264,0.627,0.516,0.961,0.754
+				c0.669,0.475,1.391,0.896,2.159,1.255c1.918,0.897,4.116,1.408,6.452,1.408c2.338,0,4.536-0.511,6.455-1.408
+				c0.768-0.358,1.488-0.78,2.158-1.255c0.334-0.238,0.654-0.49,0.962-0.754c0.417-0.361,0.798-0.753,1.159-1.158h-2.398
+				c-1.752,2.268-4.316,3.813-7.234,4.125c-0.363,0.026-0.729,0.048-1.102,0.048c-0.37,0-0.736-0.021-1.1-0.048
+				c-5.412-0.578-9.637-5.379-9.637-11.215C75.206,5.922,79.428,1.122,84.84,0.542z"/>
+		</g>
+	</g>
+</g>
+</svg>
+			</div>
+			<div class="info">
+				<div class="list">
+					<div>(주)라이프투게더</div>
+					<div>회장 : 송운서</div>
+				</div>
+				<div class="list">
+					<div>사업자등록번호 : 221-81-16850</div>
+					<div>통신판매업 신고번호 : 제 2004-50호</div>
+				</div>
+				<div class="list">
+					<div>주소 : 강원도 춘천시 공단로 13 (후평동)  / 서울 성동구 연무장5가길 7, 510호(현대테라스타워)</div>
+				</div>
+				<div class="list">
+					<div>제품문의 : 1577-4590</div>
+					<div>FAX : 033-243-4780</div>
+					<div>E-mail : rooicell@lifetogether.co.kr</div>
+				</div>
+			</div>
+			<ul class="sns_list">
+				<li class="follow i custom_mousemove small_h"><a href="https://smartstore.naver.com/rooicell" target="_blank"><img src="footer_sns_b.png" alt="네이버블로그 아이콘"></a></li>
+				<li class="follow i custom_mousemove small_h"><a href="https://www.facebook.com/Rooicell.kr/?locale=ko_KR" target="_blank"><img src="footer_sns_f.png" alt="페이스북 아이콘"></a></li>
+				<li class="follow i custom_mousemove small_h"><a href="https://www.youtube.com/@rooicell" target="_blank"><img src="footer_sns_y.png" alt="유튜브 아이콘"></a></li>
+				<li class="follow i custom_mousemove small_h"><a href="https://www.instagram.com/rooicell_korea/?hl=ko" target="_blank"><img src="footer_sns_i.png" alt="인스타그램 아이콘"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="foot_area2">
+		<div class="inner">
+			<div class="g">
+				<p class="copyright">Copyright © 2022 LIFETOGETHER CO.,LTDAll Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--//footer-->
+<script>
+	$(function(){
+		gsap.registerPlugin(ScrollTrigger);
+		
+
+		const locoScroll= new LocomotiveScroll({
+			el: document.querySelector('.page_scroll_wrap'),
+			smooth: true,
+			smoothMobile: true,
+			//getDirection: true,
+			paused: true,
+			onUpdate: () => {
+			  window.dispatchEvent(new Event('resize'));
+			},
+			multiplier:1,
+			smartphone: {
+				smooth: true
+			},
+			tablet: {
+				smooth: true
+			},
+			//getSpeed: true,
+		   useKeyboard: true,
+			//reloadOnContextChange: true
+		});
+
+		var lastScrollTop = 0;
+		var delta = 0;
+		locoScroll.on('scroll', (position) => {
+
+		function productsViewThumb(){
+		if(!$('#main').hasClass('products_view_wrap')) return;
+			var scrollDistance = position.scroll.y;
+			$('.product_gallery_big .img').each(function(i) {
+				if ($(this).position().top < (position.scroll.y)) {
+					$('.product_gallery_nav ul li').removeClass('active');
+					$('.product_gallery_nav ul li').eq(i).addClass('active');
+				}
+			});
+		}
+		productsViewThumb();
+					
+		  if ((position.scroll.y) > delta) {
+			document.querySelector('body').classList.add('active');
+			document.querySelector('header').classList.add('active');
+		  } else {
+			document.querySelector('body').classList.remove('active');
+			document.querySelector('header').classList.remove('active');
+		  }
+
+			var scrollT=position.scroll.y;
+			if(Math.abs(lastScrollTop - scrollT) <= delta)
+			return; 
+			if ((scrollT > lastScrollTop) && (lastScrollTop>90)) {
+			$('header').addClass('hide');
+			
+			} else {
+			$('header').removeClass('hide');
+			
+			}
+			lastScrollTop = scrollT;
+			if($('header:not(.fix_style)').hasClass('hide')){
+				$('header nav').fadeOut(200);
+			}else{
+				$('header nav').fadeIn(300);
+			}
+		});
+		
+		locoScroll.on("scroll", ScrollTrigger.update);
+
+		ScrollTrigger.scrollerProxy(".page_scroll_wrap", {
+			scrollTop(value) {
+				return arguments.length
+					? locoScroll.scrollTo(value, 0, 0)
+					: locoScroll.scroll.instance.scroll.y;
+			},
+			getBoundingClientRect() {
+				return {
+					top: 0,
+					left: 0,
+					width: window.innerWidth,
+					height: window.innerHeight
+				};
+			},
+			pinType: document.querySelector('.page_scroll_wrap').style.transform ? "transform" : "fixed"
+		});
+
+
+		
+		gsap.to("body.pc #subtop .sub_bg .img", {
+		  scrollTrigger: {
+			trigger: "#subtop",
+			scroller: ".page_scroll_wrap",
+			scrub: true,
+			start: "+=-10%",
+			end: "+=140%",
+		  },
+		backgroundPosition:'55% -90%',
+		});
+		gsap.to("body:not(.pc) #subtop .sub_bg .img", {
+		  scrollTrigger: {
+			trigger: "#subtop",
+			scroller: ".page_scroll_wrap",
+			scrub: true,
+			start: "0%",
+			end: "+=140%",
+		  },
+		y:'30%',
+		});
+			
+
+
+		ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+		ScrollTrigger.refresh();
+
+
+
+		function pageLayoutStyle2(){
+			if(!$('#main').hasClass('products_view_wrap')) return;
+			$(document).on("click",".product_aside ul .group",function(e){
+				window.dispatchEvent(new Event('resize'));
+				$(this).toggleClass("act");
+				if($(this).hasClass("act")){
+					$(this).find(".view").stop(true,true).show();
+					tl.staggerFromTo($(".product_aside ul .group .view .textarea"), 0.7, {opacity:0}, {opacity: 1, ease: Power1.easeInOut});
+				}else{
+					$(this).find(".view").stop(true,true).hide();
+				}
+				$(this).siblings().removeClass("act");
+				$(this).siblings().find(".view").stop(true,true).hide();
+			});
+		}
+	
+		pageLayoutStyle2();
+
+	});
+</script></div><!--//wrap-->
+<div id="video-popup"></div>
+</body>
+
+<!-- Mirrored from rooicell.co.kr/images/common/cursor_prev.png by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Feb 2025 07:19:08 GMT -->
+</html>
+<script type="text/javascript">
+ $(function(){
+	$('section%20.sec_title_g%20.link_g%20.view_more%20.html').before(
+		'<button type="button">'+
+			'<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="59.964px" height="59.988px" viewBox="0 0 59.964 59.988" enable-background="new 0 0 59.964 59.988" xml:space="preserve">'+
+			'<g>'+
+				'<circle fill="none" stroke="#ffffff" stroke-width="1" stroke-miterlimit="10" cx="29.996" cy="30.019" r="29.269"/>'+
+			'</g>'+
+			'</svg>'+
+		'</button>'
+	);
+	$(window).load(function () {
+		gsap.to("#section_wrap", {
+		  scrollTrigger: {
+			trigger: ".sec1",
+			scroller: ".page_scroll_wrap",
+			scrub: true,
+			start: "+=70%",
+			end: "+=100%",
+		  },
+		 background:'rgba(0,0,0,0.3)',
+		});
+		gsap.to(".main_visual .sec_title_g", {
+		  scrollTrigger: {
+			trigger: ".sec1",
+			scroller: ".page_scroll_wrap",
+			scrub: true,
+			start: "+=50%",
+			end: "+=70%",
+		  },
+			opacity:0,
+		});
+	});
+ });
+</script>

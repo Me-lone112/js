@@ -1,0 +1,45 @@
+.only-mo {
+    display: none !important;
+}
+
+.only-desk {
+    display: block !important;
+}
+
+.br-mo {
+    display: inline;
+    font-size: inherit;
+}
+
+.br-desk {
+    display: block;
+    font-size: 0;
+}
+
+@media (max-width: 1180px) {
+    .only-mo {
+        display: block !important;
+    }
+
+    .only-desk {
+        display: none !important;
+    }
+
+    .br-desk {
+        display: inline;
+        font-size: inherit;
+    }
+
+    .br-mo {
+        display: block;
+        font-size: 0;
+    }
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.color-primary {
+    color: #3043ff !important;
+}

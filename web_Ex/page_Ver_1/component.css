@@ -1,0 +1,413 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #3043ff;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+    background-color: #2a39d6;
+}
+
+.button[disabled] {
+    background-color: #2f2f2f;
+    color: #969696;
+    cursor: default;
+}
+
+.button-size-lg {
+    height: 64px;
+    padding: 0 24px;
+    font-size: 20px;
+}
+
+.tag-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 24px;
+    background-color: #101010;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+}
+
+.tag-button:focus,
+.tag-button:hover {
+    background-color: #3043ff;
+}
+
+.tag-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
+}
+
+.input-placeholder {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    color: #969696;
+    font-size: 14px;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+}
+
+.input-placeholder .required {
+    color: #3043ff;
+}
+
+.input-text,
+.input-textarea {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.input-text input,
+.input-textarea textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #101010;
+    background-color: #101010;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    appearance: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.input-text input {
+    height: 48px;
+    padding: 0 15px;
+}
+
+.input-textarea textarea {
+    padding: 13px 15px;
+    line-height: 20px;
+    resize: none;
+}
+
+.input-text.is-hover input,
+.input-textarea.is-hover textarea {
+    border-color: #dcdcdc;
+}
+
+.input-text.is-focus input,
+.input-textarea.is-focus textarea {
+    border-color: #dcdcdc;
+    background-color: #dcdcdc;
+    color: #101010;
+}
+
+.is-focus .input-placeholder,
+.is-fill .input-placeholder {
+    opacity: 0;
+}
+
+.input-bytes {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    color: #969696;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.input-bytes-current {
+    margin-right: 4px;
+    color: #3043ff;
+}
+
+.input-select {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.input-select .selectric {
+    border-radius: 8px;
+    border: 1px solid #101010;
+    background: #101010;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.input-select .selectric-hover .selectric {
+    border-color: #fff;
+}
+
+.input-select .selectric .label {
+    height: 46px;
+    margin: 0 47px 0 15px;
+    color: #969696;
+    font-size: 14px;
+    line-height: 46px;
+    transition: color 0.2s ease;
+}
+
+.input-select .selectric-open .selectric .label,
+.is-fill .selectric .label {
+    color: #fff;
+}
+
+.input-select .selectric .button {
+    width: 48px;
+    height: 48px;
+    background: url(../images/common/ico_chevron_down.svg) no-repeat 50% 50% / 20px 20px;
+}
+
+.input-select .selectric .button:after {
+    display: none;
+}
+
+.input-select .selectric-open .selectric .button {
+    transform: rotate(180deg);
+}
+
+.input-select .selectric-items {
+    overflow: hidden;
+    top: calc(100% + 2px);
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+}
+
+.input-select .selectric-items .disabled {
+    opacity: 0.6;
+    color: #969696 !important;
+}
+
+.input-select .selectric-items ul {
+    padding: 8px 0;
+}
+
+.input-select .selectric-items li {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.input-select .selectric-items li.highlighted,
+.input-select .selectric-items li.selected,
+.input-select .selectric-items li:hover {
+    background: transparent;
+}
+
+.input-select .selectric-above .selectric-items {
+    top: auto;
+    bottom: calc(100% + 2px);
+}
+
+.input-select .selectric-scroll::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.input-select .selectric-scroll::-webkit-scrollbar-thumb {
+    border-color: #fff;
+    background-color: #000;
+}
+
+.input-check-button {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.input-check-button input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}
+
+.input-check-button input+span {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    position: relative;
+    padding: 0 67px 0 23px;
+    border-radius: 24px;
+    border: 1px solid #101010;
+    background-color: #101010;
+    font-size: 16px;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.input-check-button input+span:after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    mask: url(../images/common/input_check_btn.svg) no-repeat 0 0 / 100% 100%;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.input-check-button input:focus+span,
+.input-check-button input+span:hover {
+    border-color: #fff;
+}
+
+.input-check-button input:checked+span {
+    border-color: #fff;
+    background-color: #fff;
+    color: #101010;
+}
+
+.input-check-button input:checked+span:after {
+    background-color: #3043ff;
+}
+
+.input-check-button input[disabled]+span {
+    border-color: #2f2f2f;
+    background-color: #2f2f2f;
+    color: #969696;
+    cursor: default;
+}
+
+.input-file {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.input-file input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip: rect(0, 0, 0, 0);
+}
+
+.input-file .button {
+    width: 100%;
+}
+
+.input-file-group ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+}
+
+.input-file-group li {
+    width: calc((100% / 2) - (24px * 1 / 2));
+    margin-bottom: 16px;
+}
+
+.input-file-group .file-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    padding: 0 48px 0 16px;
+    border-radius: 8px;
+    background-color: #101010;
+}
+
+.input-file-group .file-item .name {
+    overflow: hidden;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.input-file-group .file-item .delete {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    background: url(../images/common/ico_close.svg) no-repeat 50% 50% / 16px 16px;
+    white-space: nowrap;
+    text-indent: 100%;
+}
+
+.input-file-group .helper {
+    margin-top: 16px;
+    color: #969696;
+    font-size: 16px;
+}
+
+.input-file-group .helper .caution {
+    display: block;
+    margin-top: 4px;
+    color: #3043ff;
+    font-size: 14px;
+}
+
+.input-file-group .input-file {
+    width: calc((100% / 2) - (24px * 1 / 2));
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
+.input-group.col-2>* {
+    width: calc((100% / 2) - (24px * 1 / 2));
+}
+
+.input-group.col-3>* {
+    width: calc((100% / 3) - (24px * 2 / 3));
+}
+
+@media (max-width: 1180px) {
+    .tag-button {
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    .input-file .button {
+        width: 100%;
+    }
+
+    .input-group {
+        gap: 12px 0;
+    }
+
+    .input-group>* {
+        width: 100% !important;
+    }
+
+    .input-file-group ul {
+        gap: 0;
+    }
+
+    .input-file-group li {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .input-file-group .input-file {
+        width: 100%;
+    }
+}

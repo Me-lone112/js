@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>루이셀</title>
+
+	<!-- jquery -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+	<!-- slick -->
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+
+	<!-- 공통 css/js -->
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/commonbfee.css?v=20220128" />
+	<script src="js/indexbfee.js?v=20220128"></script>
+	<link rel="stylesheet" type="text/css" href="css/index_pcbfee.css?v=20220128"
+		media="screen and (min-width:1280px)" />
+
+	<link rel="stylesheet" type="text/css" href="css/locomotive-scroll.css" />
+	<script src="js/lodash.min.js"></script>
+	<script nomodule src="../cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"
+		crossorigin="anonymous"></script>
+	<script nomodule
+		src="../polyfill.io/v3/polyfill.min82a1.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll"
+		crossorigin="anonymous"></script>
+	<script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+	<script src="../cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+	<script src="js/locomotive-scroll.min.js"></script>
+	<script src="../code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+	<script src="../cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+	<script>WebFont.load({ google: { families: ['Noto Sans KR', 'Montserrat'] } });</script>
+
+</head>
+
+<body class="">
+
+	<div id="bg"></div>
+
+	<header id="header" class="" data-scroll-sticky>
+		<div class="header_wrap">
+			<h1 class="logo">
+				로고
+			</h1>
+			<nav id="nav">
+				<ul class="gnb">
+					<li class="menu">
+						<a href="m11.html" class="custom_mousemove small_h">
+							<div>BRAND</div>
+						</a>
+						<div class="lnb sub1">
+							<ul class="dep2">
+								<li><a href="m11.html">루이셀</a></li>
+								<li><a href="m12.html">로코블란코</a></li>
+								<li><a href="m13.html">그리앙스</a></li>
+							</ul>
+						</div><!--lnb-->
+					</li>
+					<li class="menu">
+						<a href="product.html" class="custom_mousemove small_h">
+							<div>PRODUCTS</div>
+						</a>
+						<div class="lnb sub2">
+							<ul class="dep2">
+								<li><a href="product.html">전체보기</a></li>
+								<li><a href="product31d2.html?cate=1">미백라인</a></li>
+								<li><a href="productd896.html?cate=2">수분라인</a></li>
+								<li><a href="product044b.html?cate=3">주름라인</a></li>
+								<li><a href="product80e5.html?cate=4">Special Edition</a></li>
+							</ul>
+						</div><!--lnb-->
+					</li>
+					<li class="menu">
+						<a href="m31.html" class="custom_mousemove small_h">
+							<div>OEM/ODM</div>
+						</a>
+						<div class="lnb sub3">
+							<ul class="dep2">
+								<li><a href="m31.html">프로세스</a></li>
+								<li><a href="m32.html">R&D</a></li>
+								<li><a href="m33.html">제조공정</a></li>
+								<li><a href="m34.html">Farm</a></li>
+								<li><a href="m35.html">글로벌네트워크</a></li>
+							</ul>
+						</div><!--lnb-->
+					</li>
+					<li class="menu">
+						<a href="m41.html" class="custom_mousemove small_h">
+							<div>CONTACT</div>
+						</a>
+						<div class="lnb sub4">
+							<ul class="dep2">
+								<li><a href="m41.html">Contact</a></li>
+							</ul>
+						</div><!--lnb-->
+					</li>
+			</nav>
+			<!-- e : nav -->
+			<!-- s : group -->
+			<div class="group">
+				<button type="button" class="hamburger_btn open custom_mousemove">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
+			<!-- e : group -->
+		</div>
+	</header>
+	<div id="allmenu">
+		<div class="allmenu">
+			<button type="button" class="close follow i custom_mousemove"><span class="blind">닫기</span></button>
+			<div class="inner">
+				<div class="menu_bg">
+					<div class="i"><img src="images/common/allmenu_leaf.png" alt="나뭇잎"></div>
+					<div class="bg"></div>
+					<div class="slogan">
+						<div class="tit">
+							<span>Keep your beauty</span>
+							<span>for a long time.</span>
+						</div>
+					</div>
+				</div>
+				<div class="all_gnb_wrap">
+					<ul class="all_gnb">
+						<li class="menu">
+							<div class="dep1">
+								<div class="title">Brand</div>
+							</div>
+							<ul class="sub_menu dep2 txt1">
+								<li><a href="m11.html">루이셀</a></li>
+								<li><a href="m12.html">로코블란코</a></li>
+								<li><a href="m13.html">그리앙스</a></li>
+							</ul>
+						</li>
+						<li class="menu">
+							<div class="dep1">
+								<div class="title">Products</div>
+							</div>
+							<ul class="sub_menu dep2 txt1">
+								<li><a href="product.html">전체보기</a></li>
+								<li><a href="product31d2.html?cate=1">미백라인</a></li>
+								<li><a href="productd896.html?cate=2">수분라인</a></li>
+								<li><a href="product044b.html?cate=3">주름라인</a></li>
+								<li><a href="product80e5.html?cate=4">Special Edition</a></li>
+							</ul>
+						</li>
+						<li class="menu">
+							<div class="dep1">
+								<div class="title">OEM/ODM</div>
+							</div>
+							<ul class="sub_menu dep2 txt1">
+								<li><a href="m31.html">프로세스</a></li>
+								<li><a href="m32.html">R&D</a></li>
+								<li><a href="m33.html">제조공정</a></li>
+								<li><a href="m34.html">Farm</a></li>
+								<li><a href="m35.html">글로벌네트워크</a></li>
+							</ul>
+						</li>
+						<li class="menu">
+							<div class="dep1">
+								<div class="title">Contact</div>
+							</div>
+							<ul class="sub_menu dep2 txt1">
+								<li><a href="m41.html">Contact</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- all_gnb_wrap -->
+			</div>
+		</div>
+	</div>
+	<div id="wrap" class="page_scroll_wrap ">
+		<!-- //header -->
+		<div id="container" data-scroll>
+			<div id="contents">
+				<main role="main">
+					<div class="backgroud_visual" data-scroll data-scroll-sticky data-scroll-target="#section_wrap">
+						<!--<div class="img"  style="background:url('/images/main/v01.jpg')no-repeat center/cover;" ></div>-->
+						<div class="video_wrap">
+							<video id="myVideo" muted="muted" width="100%" preload="auto" autoplay loop playsinline>
+								<source src="images/main20220318.mp4" type="video/mp4">
+							</video>
+						</div>
+					</div>
+					<div id="section_wrap">
+						<section class="section sec1 main_visual" data-scroll>
+							<div class="contents cover_height">
+								<div class="sec_title_g">
+									<div class="title1 split">Rooicell</div>
+								</div><!-- sec_title_g -->
+							</div>
+						</section>
+						<section class="section sec2 introduction" data-scroll>
+							<div class="contents cover_height" data-scroll>
+								<div class="sec_title_g" data-scroll data-scroll-speed="2.6" data-scroll-delay="0.2">
+									<div class="g ani" data-scroll>
+										<div class="title2" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+											Cosmetics <br>with Nature</div>
+										<div class="img tm_view">
+											<span
+												style="background:url('images/main/nature_bg.jpg')no-repeat center/cover;"></span>
+										</div>
+										<div class="title3">
+											자연에서 찾은 <br>순수한 아름다움의 비밀
+										</div>
+										<div class="link_g">
+											<a href="m11.html" class="view_more follow i custom_mousemove">
+												<div class="txt">BRAND STORY</div>
+											</a>
+										</div>
+									</div>
+								</div><!-- sec_title_g -->
+								<div class="img pc_view" data-scroll>
+									<span
+										style="background:url('images/main/nature_bg.jpg')no-repeat center/cover;"></span>
+								</div>
+							</div>
+						</section>
+						<section class="section sec3 best_product" data-scroll>
+							<div class="contents cover_height">
+								<div class="sec_title_g title_g1" data-scroll data-scroll-speed="1.5"
+									data-scroll-delay="0.2">
+									<div class="title2 ani" data-scroll>Best Product</div>
+								</div><!-- sec_title_g -->
+								<div id="con_fix1" class=" fix_wrap">
+									<div class="fix_con">
+										<div class="g" data-scroll data-scroll-sticky data-scroll-target="#con_fix1">
+											<div class="sec_title_g title_g2" data-scroll>
+												<div class="title3">그 시절 그대로, <br>변하지 않는 아름다움을 <br>만들어보세요</div>
+												<div class="link_g">
+													<a href="product.html" class="view_more follow i custom_mousemove">
+														<div class="txt">PRODUCT</div>
+													</a>
+												</div>
+											</div><!-- sec_title_g -->
+										</div>
+									</div><!-- fix_con -->
+									<div class="more_con" data-scroll>
+										<div class="item_show prod_show" data-scroll>
+
+											<div class="item item1 ani" data-scroll>
+												<a href="product_view6e19.html?idx=23"
+													class="follow i custom_mousemove">
+													<div class="info">
+														<div class="tit">
+															<p class="e_">ETERNO</p>
+														</div>
+														<div class="s_tit">
+															<p class="e_">에떼르노 EGF 세럼</p>
+														</div>
+													</div>
+													<img src="data/main/file1_1650008043enowuc431g.jpg" class="img"
+														alt="루이셀 제품">
+													<div class="hover">
+														<div class="group">
+															<div class="title">
+																<p class="e_">에떼르노 EGF 세럼</p>
+															</div>
+															<div class="price">96,000원</div>
+														</div>
+													</div><!-- hover -->
+												</a>
+											</div>
+
+											<div class="item item1 ani" data-scroll>
+												<a href="product_view6b06.html?idx=22"
+													class="follow i custom_mousemove">
+													<div class="info">
+														<div class="tit">
+															<p class="e_">ETERNO</p>
+														</div>
+														<div class="s_tit">
+															<p class="e_">에떼르노 콜라겐 세럼</p>
+														</div>
+													</div>
+													<img src="data/main/file1_1650008078q4b2hs8386.jpg" class="img"
+														alt="루이셀 제품">
+													<div class="hover">
+														<div class="group">
+															<div class="title">
+																<p class="e_">ETERNO COLLAGEN SERUM</p>
+															</div>
+															<div class="price">80,000원</div>
+														</div>
+													</div><!-- hover -->
+												</a>
+											</div>
+
+											<div class="item item1 ani" data-scroll>
+												<a href="product_viewe266.html?idx=21"
+													class="follow i custom_mousemove">
+													<div class="info">
+														<div class="tit">
+															<p class="e_">ETERNO</p>
+														</div>
+														<div class="s_tit">
+															<p class="e_">에떼르노 모이스처 세럼</p>
+														</div>
+													</div>
+													<img src="data/main/file1_16500081118hbf6vbvon.jpg" class="img"
+														alt="루이셀 제품">
+													<div class="hover">
+														<div class="group">
+															<div class="title">
+																<p class="e_">에떼르노 모이스처 세럼</p>
+															</div>
+															<div class="price">70,000원</div>
+														</div>
+													</div><!-- hover -->
+												</a>
+											</div>
+
+											<div class="item item1 ani" data-scroll>
+												<a href="product_view6daa.html?idx=20"
+													class="follow i custom_mousemove">
+													<div class="info">
+														<div class="tit">
+															<p class="e_">ETERNO</p>
+														</div>
+														<div class="s_tit">
+															<p class="e_">에떼르노 비타-C 세럼</p>
+														</div>
+													</div>
+													<img src="data/main/file1_1650008156gt5l0l43zm.jpg" class="img"
+														alt="루이셀 제품">
+													<div class="hover">
+														<div class="group">
+															<div class="title">
+																<p class="e_">에떼르노 비타-C 세럼</p>
+															</div>
+															<div class="price">80,000원</div>
+														</div>
+													</div><!-- hover -->
+												</a>
+											</div>
+
+										</div>
+									</div><!-- more_con -->
+								</div>
+							</div>
+						</section>
+						<section class="section sec4 our_business" data-scroll>
+							<div class="contents cover_height" data-scroll>
+								<div class="sec_title_g" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+									<div class="title2 ani" data-scroll>Our <br>Business</div>
+								</div><!-- sec_title_g -->
+								<div class="item_wrap ani" data-scroll>
+									<div class="item " data-scroll>
+										<a href="m32.html" class="follow i custom_mousemove">
+											<span class="bg"
+												style="background: url('images/main/business_bg1.jpg')no-repeat center/cover;"></span>
+											<div class="info">
+												<div class="tit">R&D</div>
+												<div class="txt1">
+													오래도록 순수한 아름다움을 원하시는 고객을 위해 <br>창의적이고 지속적인 연구개발로 인체에 가장 적합한 고기능성 제품을
+													제안합니다.
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item " data-scroll>
+										<a href="m31.html" class="follow i custom_mousemove">
+											<span class="bg"
+												style="background: url('images/main/business_bg2.jpg')no-repeat center/cover;"></span>
+											<div class="info">
+												<div class="tit">OEM/ODM</div>
+												<div class="txt1">
+													고객에게 단순히 제품만 제공하지 않습니다. <br>브랜드 가치를 창조하는 최고의 비즈니스 파트너가 되겠습니다.
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item " data-scroll>
+										<a href="m34.html" class="follow i custom_mousemove">
+											<span class="bg"
+												style="background: url('images/main/business_bg3.jpg')no-repeat center/cover;"></span>
+											<div class="info">
+												<div class="tit">ECO Farm</div>
+												<div class="txt1">
+													라이프투게더에서는 직영중인 ECO FARM 농장에서 직접 재배한 <br>자연원료를 추출하여 제품을 만들고 있습니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="section sec5 instagram" data-scroll>
+							<div class="contents cover_height" data-scroll>
+								<div class="sec_title_g" data-scroll data-scroll-speed="1.5" data-scroll-delay="0.2">
+									<div class="title4 ">@rooicell_official</div>
+									<div class="title2 ">Instagram</div>
+								</div><!-- sec_title_g -->
+								<div class="instagram_feed ani" data-scroll>
+
+									<div class="feed" data-scroll>
+										<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"
+											class="follow i custom_mousemove">
+											<span
+												style="background: url('data/insta/file1_1650002902aj9f9lkla3.jpg')no-repeat center/cover;"></span>
+											<div class="heart">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738"
+													enable-background="new 0 0 55.343 49.738" xml:space="preserve">
+													<g>
+														<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z" />
+													</g>
+												</svg>
+											</div>
+										</a>
+									</div>
+
+									<div class="feed" data-scroll>
+										<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"
+											class="follow i custom_mousemove">
+											<span
+												style="background: url('data/insta/file1_16500029154pri8wja3e.jpg')no-repeat center/cover;"></span>
+											<div class="heart">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738"
+													enable-background="new 0 0 55.343 49.738" xml:space="preserve">
+													<g>
+														<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z" />
+													</g>
+												</svg>
+											</div>
+										</a>
+									</div>
+
+									<div class="feed" data-scroll>
+										<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"
+											class="follow i custom_mousemove">
+											<span
+												style="background: url('data/insta/file1_1650002926ntslx0s69m.jpg')no-repeat center/cover;"></span>
+											<div class="heart">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738"
+													enable-background="new 0 0 55.343 49.738" xml:space="preserve">
+													<g>
+														<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z" />
+													</g>
+												</svg>
+											</div>
+										</a>
+									</div>
+
+									<div class="feed" data-scroll>
+										<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"
+											class="follow i custom_mousemove">
+											<span
+												style="background: url('data/insta/file1_1650002949cijkhtz8lu.jpg')no-repeat center/cover;"></span>
+											<div class="heart">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738"
+													enable-background="new 0 0 55.343 49.738" xml:space="preserve">
+													<g>
+														<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z" />
+													</g>
+												</svg>
+											</div>
+										</a>
+									</div>
+
+									<div class="feed" data-scroll>
+										<a href="https://www.instagram.com/rooicell_official/tagged/" target="_blnak"
+											class="follow i custom_mousemove">
+											<span
+												style="background: url('data/insta/file1_1650002961sp5zvh148r.jpg')no-repeat center/cover;"></span>
+											<div class="heart">
+												<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													width="55.343px" height="49.738px" viewBox="0 0 55.343 49.738"
+													enable-background="new 0 0 55.343 49.738" xml:space="preserve">
+													<g>
+														<path d="M24.994,4.179C19.5-1.391,10.59-1.388,5.101,4.178l-0.442,0.45
+									c-6.211,6.296-6.209,16.508-0.005,22.798l21.295,21.592c0.951,0.966,2.501,0.955,3.444,0l21.295-21.592
+									c6.208-6.294,6.209-16.499-0.004-22.798l-0.442-0.45c-5.495-5.569-14.397-5.572-19.893,0.001l-1.812,1.834
+									c-0.479,0.486-1.258,0.483-1.733,0L24.994,4.179z" />
+													</g>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div id="scroll_btn" class="scroll_btn" data-scroll data-scroll-sticky
+						data-scroll-target="#section_wrap">
+						<div class="btn_g">
+						</div>
+					</div>
+
+
+					<div id="scroll_wrap" class="up" data-scroll data-scroll-sticky data-scroll-target="#container">
+						<a href="#wrap" data-scroll-to>
+							<div class="icon">
+								<div class="arrow_area">
+									<span>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px"
+											height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55"
+											xml:space="preserve">
+											<g>
+												<g>
+													<path fill="none" stroke="#ffffff" stroke-miterlimit="10"
+														d="M27.063,20.201c0,3.173-2.574,5.746-5.746,5.746" />
+													<path fill="none" stroke="#ffffff" stroke-miterlimit="10"
+														d="M27.021,20.201c0,3.173,2.572,5.746,5.746,5.746" />
+												</g>
+												<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="27.041"
+													y1="34.799" x2="27.041" y2="20.201" />
+											</g>
+										</svg>
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="55px"
+											height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55"
+											xml:space="preserve">
+											<g>
+												<g>
+													<path fill="none" stroke="#ffffff" stroke-miterlimit="10"
+														d="M27.063,20.201c0,3.173-2.574,5.746-5.746,5.746" />
+													<path fill="none" stroke="#ffffff" stroke-miterlimit="10"
+														d="M27.021,20.201c0,3.173,2.572,5.746,5.746,5.746" />
+												</g>
+												<line fill="none" stroke="#ffffff" stroke-miterlimit="10" x1="27.041"
+													y1="34.799" x2="27.041" y2="20.201" />
+											</g>
+										</svg>
+									</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</main>
+			</div><!--//container-->
+		</div><!--//contents -->
+	
+		<!--//footer-->
+		<script>
+			$(function () {
+				gsap.registerPlugin(ScrollTrigger);
+
+
+				const locoScroll = new LocomotiveScroll({
+					el: document.querySelector('.page_scroll_wrap'),
+					smooth: true,
+					smoothMobile: true,
+					//getDirection: true,
+					paused: true,
+					onUpdate: () => {
+						window.dispatchEvent(new Event('resize'));
+					},
+					multiplier: 1,
+					smartphone: {
+						smooth: true
+					},
+					tablet: {
+						smooth: true
+					},
+					//getSpeed: true,
+					useKeyboard: true,
+					//reloadOnContextChange: true
+				});
+
+				var lastScrollTop = 0;
+				var delta = 0;
+				locoScroll.on('scroll', (position) => {
+
+					function productsViewThumb() {
+						if (!$('#main').hasClass('products_view_wrap')) return;
+						var scrollDistance = position.scroll.y;
+						$('.product_gallery_big .img').each(function (i) {
+							if ($(this).position().top < (position.scroll.y)) {
+								$('.product_gallery_nav ul li').removeClass('active');
+								$('.product_gallery_nav ul li').eq(i).addClass('active');
+							}
+						});
+					}
+					productsViewThumb();
+
+					if ((position.scroll.y) > delta) {
+						document.querySelector('body').classList.add('active');
+						document.querySelector('header').classList.add('active');
+					} else {
+						document.querySelector('body').classList.remove('active');
+						document.querySelector('header').classList.remove('active');
+					}
+
+					var scrollT = position.scroll.y;
+					if (Math.abs(lastScrollTop - scrollT) <= delta)
+						return;
+					if ((scrollT > lastScrollTop) && (lastScrollTop > 90)) {
+						$('header').addClass('hide');
+
+					} else {
+						$('header').removeClass('hide');
+
+					}
+					lastScrollTop = scrollT;
+					if ($('header:not(.fix_style)').hasClass('hide')) {
+						$('header nav').fadeOut(200);
+					} else {
+						$('header nav').fadeIn(300);
+					}
+				});
+
+				locoScroll.on("scroll", ScrollTrigger.update);
+
+				ScrollTrigger.scrollerProxy(".page_scroll_wrap", {
+					scrollTop(value) {
+						return arguments.length
+							? locoScroll.scrollTo(value, 0, 0)
+							: locoScroll.scroll.instance.scroll.y;
+					},
+					getBoundingClientRect() {
+						return {
+							top: 0,
+							left: 0,
+							width: window.innerWidth,
+							height: window.innerHeight
+						};
+					},
+					pinType: document.querySelector('.page_scroll_wrap').style.transform ? "transform" : "fixed"
+				});
+
+
+
+				gsap.to("body.pc #subtop .sub_bg .img", {
+					scrollTrigger: {
+						trigger: "#subtop",
+						scroller: ".page_scroll_wrap",
+						scrub: true,
+						start: "+=-10%",
+						end: "+=140%",
+					},
+					backgroundPosition: '55% -90%',
+				});
+				gsap.to("body:not(.pc) #subtop .sub_bg .img", {
+					scrollTrigger: {
+						trigger: "#subtop",
+						scroller: ".page_scroll_wrap",
+						scrub: true,
+						start: "0%",
+						end: "+=140%",
+					},
+					y: '30%',
+				});
+
+
+
+				ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+				ScrollTrigger.refresh();
+
+
+
+				function pageLayoutStyle2() {
+					if (!$('#main').hasClass('products_view_wrap')) return;
+					$(document).on("click", ".product_aside ul .group", function (e) {
+						window.dispatchEvent(new Event('resize'));
+						$(this).toggleClass("act");
+						if ($(this).hasClass("act")) {
+							$(this).find(".view").stop(true, true).show();
+							tl.staggerFromTo($(".product_aside ul .group .view .textarea"), 0.7, { opacity: 0 }, { opacity: 1, ease: Power1.easeInOut });
+						} else {
+							$(this).find(".view").stop(true, true).hide();
+						}
+						$(this).siblings().removeClass("act");
+						$(this).siblings().find(".view").stop(true, true).hide();
+					});
+				}
+
+				pageLayoutStyle2();
+
+			});
+		</script>
+	</div>
+	<div id="video-popup"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+	$(window).load(function () {
+		gsap.to("#section_wrap", {
+			scrollTrigger: {
+				trigger: ".sec1",
+				scroller: ".page_scroll_wrap",
+				scrub: true,
+				start: "+=70%",
+				end: "+=100%",
+			},
+			background: 'rgba(0,0,0,0.3)',
+		});
+		gsap.to(".main_visual .sec_title_g", {
+			scrollTrigger: {
+				trigger: ".sec1",
+				scroller: ".page_scroll_wrap",
+				scrub: true,
+				start: "+=50%",
+				end: "+=70%",
+			},
+			opacity: 0,
+		});
+	});
+</script>
